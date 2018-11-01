@@ -1,0 +1,39 @@
+2018-11-01 18:05:30 -Starting Application on MS-20180106TIRW with PID 4648 (D:\eclipse1\Users\Administrator\workspace\Springboot_Mybatis\target\classes started by Administrator in D:\eclipse1\Users\Administrator\workspace\Springboot_Mybatis)
+2018-11-01 18:05:30 -The following profiles are active: dev
+2018-11-01 18:05:31 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@665973f5: startup date [Thu Nov 01 18:05:31 GMT+08:00 2018]; root of context hierarchy
+2018-11-01 18:05:32 -HV000001: Hibernate Validator 5.3.5.Final
+2018-11-01 18:05:37 -Tomcat initialized with port(s): 8088 (http)
+2018-11-01 18:05:37 -Starting service [Tomcat]
+2018-11-01 18:05:37 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-01 18:05:38 -Initializing Spring embedded WebApplicationContext
+2018-11-01 18:05:38 -Root WebApplicationContext: initialization completed in 6888 ms
+2018-11-01 18:05:39 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 18:05:39 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 18:05:39 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 18:05:39 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 18:05:39 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-01 18:05:39 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 18:05:39 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-01 18:05:39 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-01 18:05:39 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-01 18:05:43 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@665973f5: startup date [Thu Nov 01 18:05:31 GMT+08:00 2018]; root of context hierarchy
+2018-11-01 18:05:43 -Mapped "{[/user/getAllUser]}" onto public java.util.List<com.zqq.model.User> com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-01 18:05:43 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 18:05:43 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 18:05:43 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 18:05:43 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 18:05:43 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 18:05:43 -Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-11-01 18:05:45 -LiveReload server is running on port 35729
+2018-11-01 18:05:45 -Registering beans for JMX exposure on startup
+2018-11-01 18:05:45 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-01 18:05:45 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-01 18:05:45 -Initializing ProtocolHandler ["http-nio-8088"]
+2018-11-01 18:05:45 -Starting ProtocolHandler ["http-nio-8088"]
+2018-11-01 18:05:45 -Using a shared selector for servlet write/read
+2018-11-01 18:05:45 -Tomcat started on port(s): 8088 (http)
+2018-11-01 18:05:46 -Started Application in 16.983 seconds (JVM running for 18.352)
+2018-11-01 18:05:57 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-01 18:05:57 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-01 18:05:57 -FrameworkServlet 'dispatcherServlet': initialization completed in 83 ms
+2018-11-01 18:05:58 -{dataSource-1} inited
