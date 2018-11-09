@@ -11,4 +11,8 @@ public interface UserService {
     List<User> findAllUserByPage(int pageNum, int pageSize);
     
     List<User> findAllUsers();
+    
+    User getUserById(Integer userId);
+    
+    int deleteUserById(Integer userId);
 }

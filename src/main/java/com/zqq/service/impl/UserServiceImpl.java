@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
 import com.zqq.mapper.UserMapper;
 import com.zqq.model.User;
 import com.zqq.service.UserService;
-@Service("userService")
+@Service
 public class UserServiceImpl implements UserService {
 
-	@Resource
+	@Autowired
 	private UserMapper userMapper;
 	
 	
@@ -41,6 +41,16 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<User> findAllUsers() {
 		return userMapper.getAllUsers();
+	}
+
+	@Override
+	public User getUserById(Integer userId) {
+		return userMapper.selectByPrimaryKey(userId);
+	}
+
+	@Override
+	public int deleteUserById(Integer userId) {
+		return userMapper.deleteByPrimaryKey(userId);
 	}
 
 }

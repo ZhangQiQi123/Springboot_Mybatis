@@ -2,7 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.zqq</groupId>
   <artifactId>Springboot_Mybatis</artifactId>
+  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
+  <name>Springboot_Mybatis</name>
   
 	<!-- Spring boot的项目必须要将parent设置为spring boot的parent，该parent包含了大量默认的配置，大大简化了我们的开发。 -->
 	<parent> 
@@ -16,34 +18,87 @@
 	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
 	  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
 	  <java.version>1.8</java.version> 
+	  <poi.version>3.13</poi.version>
+	  
   	</properties>  
   	
   	<dependencies> 
-   	   <!-- spring-boot整合mybatis -->
-	   <dependency> 
-		   <groupId>org.mybatis.spring.boot</groupId> 
-		   <artifactId>mybatis-spring-boot-starter</artifactId> 
-		   <version>1.3.0</version> 
-	   </dependency> 
-	   <dependency> 
-		   <groupId>org.springframework.boot</groupId> 
-		   <artifactId>spring-boot-starter-thymeleaf</artifactId> 
-	   </dependency> 
-	   <dependency> 
+  		<!-- spring web -->
+  	   <dependency> 
 		   <groupId>org.springframework.boot</groupId> 
 		   <artifactId>spring-boot-starter-web</artifactId> 
-	   </dependency> 
-	   <dependency> 
-		   <groupId>org.springframework.boot</groupId> 
-		   <artifactId>spring-boot-starter-test</artifactId> 
-		   <scope>test</scope> 
-	   </dependency> 
-	   <!-- mysql驱动 -->
+	   </dependency>
+	   <!-- 运行在外置的tomcat -->
+       <dependency>
+       	<groupId>org.springframework.boot</groupId>
+       	<artifactId>spring-boot-starter-tomcat</artifactId>
+       	<!-- <scope>provided</scope> -->
+       	<scope>compile</scope>
+       </dependency>
+	   <!-- aop依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <!--thymeleaf模板-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!--测试-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <!--<scope>test</scope>-->
+        </dependency>
+          <!--jdbc-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+	    <!-- mysql驱动 -->
 	   <dependency> 
 		   <groupId>mysql</groupId> 
 		   <artifactId>mysql-connector-java</artifactId> 
 		   <!-- <version>5.1.35</version>  -->
 	   </dependency> 
+	    <!-- alibaba的druid数据库连接池 --> 
+	   <dependency> 
+		   <groupId>com.alibaba</groupId> 
+		   <artifactId>druid-spring-boot-starter</artifactId> 
+		   <version>1.1.0</version> 
+	   </dependency> 
+	     <!--persistence-->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+	    <!-- spring-boot整合mybatis -->
+	   <dependency> 
+		   <groupId>org.mybatis.spring.boot</groupId> 
+		   <artifactId>mybatis-spring-boot-starter</artifactId> 
+		   <version>1.3.0</version> 
+	   </dependency> 
+	   <!-- 通用 mapper -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>1.1.7</version>
+        </dependency>
+         <!-- spring整合shiro  maven会自动添加shiro-core,shiro-web依赖 -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <!-- shiro-thymeleaf -->
+        <dependency>
+            <groupId>com.github.theborakompanioni</groupId>
+            <artifactId>thymeleaf-extras-shiro</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+	  <!-- json格式化 -->
 	   <dependency> 
 		   <groupId>com.fasterxml.jackson.core</groupId> 
 		   <artifactId>jackson-core</artifactId> 
@@ -60,23 +115,51 @@
 		   <groupId>com.fasterxml.jackson.module</groupId> 
 		   <artifactId>jackson-module-parameter-names</artifactId> 
 	   </dependency> 
-	   <!-- 分页插件 --> 
-	   <!-- <dependency> 
-		   <groupId>com.github.pagehelper</groupId> 
-		   <artifactId>pagehelper-spring-boot-starter</artifactId> 
-		   <version>1.1.2</version> 
-	   </dependency>  -->
-	   <!-- mybatis的分页插件 -->
-	   <!-- <dependency>
-		   <groupId>com.github.pagehelper</groupId>
-		   <artifactId>pagehelper</artifactId>
-	   </dependency> -->
-	   <!-- alibaba的druid数据库连接池 --> 
-	   <dependency> 
-		   <groupId>com.alibaba</groupId> 
-		   <artifactId>druid-spring-boot-starter</artifactId> 
-		   <version>1.1.0</version> 
-	   </dependency> 
+	    <!-- poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+		 <!-- csv -->
+        <dependency>
+            <groupId>net.sourceforge.javacsv</groupId>
+            <artifactId>javacsv</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <!-- quartz -->
+       <!--  <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+        </dependency> -->
+		  <!-- commons -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+		 <!-- xss过滤 -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+	   <!-- pagehelper 分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.5</version>
+        </dependency>
 	    <!-- 基本配置 -->
         <dependency>
             <groupId>junit</groupId>
@@ -96,15 +179,19 @@
             <version>2.0</version>
             <scope>provided</scope>
         </dependency>
+        
 	    <!-- 热启动 -->
 	   <dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-devtools</artifactId>
 	        <optional>true</optional>
        </dependency>
+       
    </dependencies>
 
 	<build>
+	<!-- 打成jar包的名称 -->
+	<finalName>Springboot_Mybatis</finalName>
 		<plugins> 
 			<plugin> 
 				<groupId>org.springframework.boot</groupId> 

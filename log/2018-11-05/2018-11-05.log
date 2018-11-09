@@ -1,0 +1,914 @@
+2018-11-05 09:58:11 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 09:58:11 -The following profiles are active: dev
+2018-11-05 09:58:12 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1eb8b4ab: startup date [Mon Nov 05 09:58:12 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 09:58:12 -HV000001: Hibernate Validator 5.3.5.Final
+2018-11-05 09:58:18 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 09:58:18 -Starting service [Tomcat]
+2018-11-05 09:58:18 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 09:58:18 -Initializing Spring embedded WebApplicationContext
+2018-11-05 09:58:18 -Root WebApplicationContext: initialization completed in 6433 ms
+2018-11-05 09:58:19 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 09:58:19 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 09:58:19 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 09:58:19 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 09:58:19 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 09:58:19 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 09:58:19 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 09:58:19 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 09:58:19 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 09:58:22 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1eb8b4ab: startup date [Mon Nov 05 09:58:12 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 09:58:22 -Mapped "{[/user/getAllUser]}" onto public java.util.List<com.zqq.model.User> com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 09:58:22 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 09:58:22 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 09:58:23 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 09:58:23 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 09:58:23 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 09:58:25 -LiveReload server is running on port 35729
+2018-11-05 09:58:25 -Registering beans for JMX exposure on startup
+2018-11-05 09:58:25 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 09:58:25 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 09:58:25 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 09:58:25 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 09:58:25 -Using a shared selector for servlet write/read
+2018-11-05 09:58:26 -Tomcat started on port(s): 80 (http)
+2018-11-05 09:58:26 -Started Application in 16.48 seconds (JVM running for 17.904)
+2018-11-05 09:59:02 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-05 09:59:02 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-05 09:59:02 -FrameworkServlet 'dispatcherServlet': initialization completed in 70 ms
+2018-11-05 09:59:02 -{dataSource-1} inited
+2018-11-05 10:03:15 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1eb8b4ab: startup date [Mon Nov 05 09:58:12 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 10:03:15 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 10:03:15 -Unregistering JMX-exposed beans
+2018-11-05 10:03:15 -{dataSource-1} closed
+2018-11-05 10:03:16 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 10:03:16 -The following profiles are active: dev
+2018-11-05 10:03:16 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@760c9368: startup date [Mon Nov 05 10:03:16 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 10:03:18 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 10:03:18 -Starting service [Tomcat]
+2018-11-05 10:03:18 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 10:03:18 -Initializing Spring embedded WebApplicationContext
+2018-11-05 10:03:18 -Root WebApplicationContext: initialization completed in 1440 ms
+2018-11-05 10:03:18 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 10:03:18 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 10:03:18 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 10:03:18 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 10:03:18 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 10:03:18 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 10:03:18 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 10:03:18 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 10:03:18 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 10:03:19 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@760c9368: startup date [Mon Nov 05 10:03:16 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 10:03:19 -Mapped "{[/user/getAllUser]}" onto public java.util.List<com.zqq.model.User> com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 10:03:19 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 10:03:19 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 10:03:19 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 10:03:19 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 10:03:19 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 10:03:19 -LiveReload server is running on port 35729
+2018-11-05 10:03:19 -Registering beans for JMX exposure on startup
+2018-11-05 10:03:19 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 10:03:19 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 10:03:19 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 10:03:19 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 10:03:19 -Using a shared selector for servlet write/read
+2018-11-05 10:03:19 -Tomcat started on port(s): 80 (http)
+2018-11-05 10:03:19 -Started Application in 3.085 seconds (JVM running for 311.514)
+2018-11-05 10:04:01 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@760c9368: startup date [Mon Nov 05 10:03:16 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 10:04:01 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 10:04:01 -Unregistering JMX-exposed beans
+2018-11-05 10:04:02 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 10:04:02 -The following profiles are active: dev
+2018-11-05 10:04:02 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@431e465b: startup date [Mon Nov 05 10:04:02 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 10:04:03 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 10:04:03 -Starting service [Tomcat]
+2018-11-05 10:04:03 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 10:04:03 -Initializing Spring embedded WebApplicationContext
+2018-11-05 10:04:03 -Root WebApplicationContext: initialization completed in 1202 ms
+2018-11-05 10:04:03 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 10:04:03 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 10:04:03 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 10:04:03 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 10:04:03 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 10:04:03 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 10:04:03 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 10:04:03 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 10:04:03 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 10:04:04 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@431e465b: startup date [Mon Nov 05 10:04:02 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 10:04:04 -Mapped "{[/user/getAllUser]}" onto public java.util.List<com.zqq.model.User> com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 10:04:04 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 10:04:04 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 10:04:04 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 10:04:04 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 10:04:04 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 10:04:04 -LiveReload server is running on port 35729
+2018-11-05 10:04:04 -Registering beans for JMX exposure on startup
+2018-11-05 10:04:04 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 10:04:04 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 10:04:04 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 10:04:04 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 10:04:04 -Using a shared selector for servlet write/read
+2018-11-05 10:04:04 -Tomcat started on port(s): 80 (http)
+2018-11-05 10:04:04 -Started Application in 2.639 seconds (JVM running for 356.821)
+2018-11-05 11:01:43 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@431e465b: startup date [Mon Nov 05 10:04:02 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:01:43 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:01:43 -Unregistering JMX-exposed beans
+2018-11-05 11:01:44 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:01:44 -The following profiles are active: dev
+2018-11-05 11:01:44 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a99add: startup date [Mon Nov 05 11:01:44 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:01:45 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:01:45 -Starting service [Tomcat]
+2018-11-05 11:01:45 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:01:45 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:01:45 -Root WebApplicationContext: initialization completed in 1157 ms
+2018-11-05 11:01:45 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:01:45 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:01:45 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:01:45 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:01:45 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:01:45 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:01:45 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:01:45 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:01:45 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:01:46 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a99add: startup date [Mon Nov 05 11:01:44 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:01:46 -Mapped "{[/user/getAllUser]}" onto public java.util.List<com.zqq.model.User> com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:01:46 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:01:46 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:01:46 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:01:46 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:01:46 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:01:46 -LiveReload server is running on port 35729
+2018-11-05 11:01:47 -Registering beans for JMX exposure on startup
+2018-11-05 11:01:47 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:01:47 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:01:47 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:01:47 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:01:47 -Using a shared selector for servlet write/read
+2018-11-05 11:01:47 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:01:47 -Started Application in 2.856 seconds (JVM running for 3818.964)
+2018-11-05 11:05:55 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a99add: startup date [Mon Nov 05 11:01:44 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:05:55 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:05:55 -Unregistering JMX-exposed beans
+2018-11-05 11:05:56 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:05:56 -The following profiles are active: dev
+2018-11-05 11:05:56 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@464b1084: startup date [Mon Nov 05 11:05:56 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:05:57 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:05:57 -Starting service [Tomcat]
+2018-11-05 11:05:57 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:05:57 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:05:57 -Root WebApplicationContext: initialization completed in 1128 ms
+2018-11-05 11:05:57 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:05:57 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:05:57 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:05:57 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:05:57 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:05:57 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:05:57 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:05:57 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:05:57 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:05:58 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@464b1084: startup date [Mon Nov 05 11:05:56 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:05:58 -Mapped "{[/user/getAllUser]}" onto public java.util.List<com.zqq.model.User> com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:05:58 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:05:58 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:05:58 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:05:58 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:05:58 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:05:58 -LiveReload server is running on port 35729
+2018-11-05 11:05:58 -Registering beans for JMX exposure on startup
+2018-11-05 11:05:58 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:05:58 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:05:58 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:05:58 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:05:58 -Using a shared selector for servlet write/read
+2018-11-05 11:05:58 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:05:58 -Started Application in 2.439 seconds (JVM running for 4070.286)
+2018-11-05 11:07:47 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@464b1084: startup date [Mon Nov 05 11:05:56 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:07:47 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:07:47 -Unregistering JMX-exposed beans
+2018-11-05 11:07:48 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:07:48 -The following profiles are active: dev
+2018-11-05 11:07:48 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f24c453: startup date [Mon Nov 05 11:07:48 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:07:49 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:07:49 -Starting service [Tomcat]
+2018-11-05 11:07:49 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:07:49 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:07:49 -Root WebApplicationContext: initialization completed in 1089 ms
+2018-11-05 11:07:49 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:07:49 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:07:49 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:07:49 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:07:49 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:07:49 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:07:49 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:07:49 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:07:49 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:07:50 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f24c453: startup date [Mon Nov 05 11:07:48 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:07:50 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:07:50 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:07:50 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:07:50 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:07:50 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:07:50 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:07:50 -LiveReload server is running on port 35729
+2018-11-05 11:07:50 -Registering beans for JMX exposure on startup
+2018-11-05 11:07:50 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:07:50 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:07:50 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:07:50 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:07:50 -Using a shared selector for servlet write/read
+2018-11-05 11:07:50 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:07:50 -Started Application in 2.331 seconds (JVM running for 4182.675)
+2018-11-05 11:07:59 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f24c453: startup date [Mon Nov 05 11:07:48 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:07:59 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:07:59 -Unregistering JMX-exposed beans
+2018-11-05 11:08:01 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:08:01 -The following profiles are active: dev
+2018-11-05 11:08:01 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@293f65d1: startup date [Mon Nov 05 11:08:01 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:08:03 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:08:03 -Starting service [Tomcat]
+2018-11-05 11:08:03 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:08:03 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:08:03 -Root WebApplicationContext: initialization completed in 2151 ms
+2018-11-05 11:08:03 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:08:03 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:08:03 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:08:03 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:08:03 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:08:03 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:08:03 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:08:03 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:08:03 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:08:04 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@293f65d1: startup date [Mon Nov 05 11:08:01 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:08:04 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:08:04 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:08:04 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:08:04 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:08:04 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:08:04 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:08:04 -LiveReload server is running on port 35729
+2018-11-05 11:08:04 -Registering beans for JMX exposure on startup
+2018-11-05 11:08:04 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:08:04 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:08:04 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:08:04 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:08:04 -Using a shared selector for servlet write/read
+2018-11-05 11:08:04 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:08:04 -Started Application in 4.466 seconds (JVM running for 4196.74)
+2018-11-05 11:11:10 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@293f65d1: startup date [Mon Nov 05 11:08:01 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:11:10 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:11:10 -Unregistering JMX-exposed beans
+2018-11-05 11:11:11 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:11:11 -The following profiles are active: dev
+2018-11-05 11:11:11 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c5a5724: startup date [Mon Nov 05 11:11:11 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:11:12 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:11:12 -Starting service [Tomcat]
+2018-11-05 11:11:12 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:11:12 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:11:12 -Root WebApplicationContext: initialization completed in 1048 ms
+2018-11-05 11:11:12 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:11:12 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:11:12 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:11:12 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:11:12 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:11:12 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:11:12 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:11:12 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:11:12 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:11:13 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c5a5724: startup date [Mon Nov 05 11:11:11 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:11:13 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:11:13 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:11:13 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:11:13 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:11:13 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:11:13 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:11:13 -LiveReload server is running on port 35729
+2018-11-05 11:11:13 -Registering beans for JMX exposure on startup
+2018-11-05 11:11:13 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:11:13 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:11:13 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:11:13 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:11:13 -Using a shared selector for servlet write/read
+2018-11-05 11:11:13 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:11:13 -Started Application in 2.209 seconds (JVM running for 4385.493)
+2018-11-05 11:12:32 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c5a5724: startup date [Mon Nov 05 11:11:11 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:32 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:12:32 -Unregistering JMX-exposed beans
+2018-11-05 11:12:34 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:12:34 -The following profiles are active: dev
+2018-11-05 11:12:34 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53d38c49: startup date [Mon Nov 05 11:12:34 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:35 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:12:35 -Starting service [Tomcat]
+2018-11-05 11:12:35 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:12:35 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:12:35 -Root WebApplicationContext: initialization completed in 1710 ms
+2018-11-05 11:12:35 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:12:35 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:12:35 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:12:35 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:12:35 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:12:35 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:12:35 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:12:35 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:12:35 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:12:37 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53d38c49: startup date [Mon Nov 05 11:12:34 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:37 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:12:37 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:12:37 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:12:37 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:37 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:37 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:37 -LiveReload server is running on port 35729
+2018-11-05 11:12:37 -Registering beans for JMX exposure on startup
+2018-11-05 11:12:37 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:12:37 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:12:37 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:12:37 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:12:37 -Using a shared selector for servlet write/read
+2018-11-05 11:12:37 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:12:37 -Started Application in 4.312 seconds (JVM running for 4469.741)
+2018-11-05 11:12:40 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53d38c49: startup date [Mon Nov 05 11:12:34 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:40 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:12:40 -Unregistering JMX-exposed beans
+2018-11-05 11:12:41 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:12:41 -The following profiles are active: dev
+2018-11-05 11:12:41 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d68f88d: startup date [Mon Nov 05 11:12:41 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:42 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:12:42 -Starting service [Tomcat]
+2018-11-05 11:12:42 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:12:42 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:12:42 -Root WebApplicationContext: initialization completed in 932 ms
+2018-11-05 11:12:42 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:12:42 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:12:42 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:12:42 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:12:42 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:12:42 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:12:42 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:12:42 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:12:42 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:12:42 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d68f88d: startup date [Mon Nov 05 11:12:41 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:42 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:12:43 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:12:43 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:12:43 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:43 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:43 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:43 -LiveReload server is running on port 35729
+2018-11-05 11:12:43 -Registering beans for JMX exposure on startup
+2018-11-05 11:12:43 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:12:43 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:12:43 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:12:43 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:12:43 -Using a shared selector for servlet write/read
+2018-11-05 11:12:43 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:12:43 -Started Application in 2.084 seconds (JVM running for 4475.092)
+2018-11-05 11:12:46 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d68f88d: startup date [Mon Nov 05 11:12:41 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:46 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:12:46 -Unregistering JMX-exposed beans
+2018-11-05 11:12:47 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:12:47 -The following profiles are active: dev
+2018-11-05 11:12:47 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b91cff0: startup date [Mon Nov 05 11:12:47 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:48 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:12:48 -Starting service [Tomcat]
+2018-11-05 11:12:48 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:12:48 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:12:48 -Root WebApplicationContext: initialization completed in 944 ms
+2018-11-05 11:12:48 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:12:48 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:12:48 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:12:48 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:12:48 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:12:48 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:12:48 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:12:48 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:12:48 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:12:48 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b91cff0: startup date [Mon Nov 05 11:12:47 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:12:48 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:12:48 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:12:48 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:12:48 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:48 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:49 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:12:49 -LiveReload server is running on port 35729
+2018-11-05 11:12:49 -Registering beans for JMX exposure on startup
+2018-11-05 11:12:49 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:12:49 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:12:49 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:12:49 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:12:49 -Using a shared selector for servlet write/read
+2018-11-05 11:12:49 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:12:49 -Started Application in 2.025 seconds (JVM running for 4481.056)
+2018-11-05 11:13:29 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b91cff0: startup date [Mon Nov 05 11:12:47 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:13:29 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:13:29 -Unregistering JMX-exposed beans
+2018-11-05 11:13:30 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:13:30 -The following profiles are active: dev
+2018-11-05 11:13:30 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@210c950c: startup date [Mon Nov 05 11:13:30 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:13:31 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:13:31 -Starting service [Tomcat]
+2018-11-05 11:13:31 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:13:31 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:13:31 -Root WebApplicationContext: initialization completed in 1076 ms
+2018-11-05 11:13:31 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:13:31 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:13:31 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:13:31 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:13:31 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:13:31 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:13:31 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:13:31 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:13:31 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:13:31 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@210c950c: startup date [Mon Nov 05 11:13:30 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:13:31 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:13:31 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:13:31 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:13:31 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:13:31 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:13:31 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:13:32 -LiveReload server is running on port 35729
+2018-11-05 11:13:32 -Registering beans for JMX exposure on startup
+2018-11-05 11:13:32 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:13:32 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:13:32 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:13:32 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:13:32 -Using a shared selector for servlet write/read
+2018-11-05 11:13:32 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:13:32 -Started Application in 2.41 seconds (JVM running for 4524.046)
+2018-11-05 11:14:40 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@210c950c: startup date [Mon Nov 05 11:13:30 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:14:40 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:14:40 -Unregistering JMX-exposed beans
+2018-11-05 11:14:41 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:14:41 -The following profiles are active: dev
+2018-11-05 11:14:41 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7243e234: startup date [Mon Nov 05 11:14:41 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:14:42 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:14:42 -Starting service [Tomcat]
+2018-11-05 11:14:42 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:14:42 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:14:42 -Root WebApplicationContext: initialization completed in 772 ms
+2018-11-05 11:14:42 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:14:42 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:14:42 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:14:42 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:14:42 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:14:42 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:14:42 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:14:42 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:14:42 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:14:42 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7243e234: startup date [Mon Nov 05 11:14:41 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:14:42 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:14:42 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:14:42 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:14:42 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:14:42 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:14:42 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:14:43 -LiveReload server is running on port 35729
+2018-11-05 11:14:43 -Registering beans for JMX exposure on startup
+2018-11-05 11:14:43 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:14:43 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:14:43 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-05 11:14:43 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-05 11:14:43 -Using a shared selector for servlet write/read
+2018-11-05 11:14:43 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:14:43 -Started Application in 1.874 seconds (JVM running for 4595.002)
+2018-11-05 11:19:41 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7243e234: startup date [Mon Nov 05 11:14:41 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:19:41 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:19:41 -Unregistering JMX-exposed beans
+2018-11-05 11:19:46 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:19:46 -The following profiles are active: dev
+2018-11-05 11:19:46 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bf33d3e: startup date [Mon Nov 05 11:19:46 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:19:47 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:19:47 -Starting service [Tomcat]
+2018-11-05 11:19:47 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:19:47 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:19:47 -Root WebApplicationContext: initialization completed in 834 ms
+2018-11-05 11:19:47 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:19:47 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:19:47 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:19:47 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:19:47 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:19:47 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:19:47 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:19:47 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:19:47 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:19:48 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bf33d3e: startup date [Mon Nov 05 11:19:46 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:19:48 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:19:48 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:19:48 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:19:48 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:19:48 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:19:48 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:19:48 -LiveReload server is running on port 35729
+2018-11-05 11:19:48 -Registering beans for JMX exposure on startup
+2018-11-05 11:19:48 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:19:48 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:19:48 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:19:48 -Started Application in 1.818 seconds (JVM running for 4900.232)
+2018-11-05 11:21:07 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bf33d3e: startup date [Mon Nov 05 11:19:46 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:21:07 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:21:07 -Unregistering JMX-exposed beans
+2018-11-05 11:26:03 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:26:03 -The following profiles are active: dev
+2018-11-05 11:26:03 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c3aa46a: startup date [Mon Nov 05 11:26:03 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:26:05 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:26:05 -Starting service [Tomcat]
+2018-11-05 11:26:05 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:26:05 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:26:05 -Root WebApplicationContext: initialization completed in 1647 ms
+2018-11-05 11:26:05 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:26:05 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:26:05 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:26:05 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:26:05 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:26:05 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:26:05 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:26:05 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:26:05 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:26:06 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c3aa46a: startup date [Mon Nov 05 11:26:03 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:26:06 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:26:06 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:26:06 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:26:06 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:26:06 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:26:06 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:26:06 -LiveReload server is running on port 35729
+2018-11-05 11:26:06 -Registering beans for JMX exposure on startup
+2018-11-05 11:26:06 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:26:06 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:26:06 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:26:06 -Started Application in 3.046 seconds (JVM running for 5278.292)
+2018-11-05 11:27:22 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c3aa46a: startup date [Mon Nov 05 11:26:03 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:27:22 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:27:22 -Unregistering JMX-exposed beans
+2018-11-05 11:27:23 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:27:23 -The following profiles are active: dev
+2018-11-05 11:27:23 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@654e67e0: startup date [Mon Nov 05 11:27:23 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:27:24 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:27:24 -Starting service [Tomcat]
+2018-11-05 11:27:24 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:27:24 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:27:24 -Root WebApplicationContext: initialization completed in 927 ms
+2018-11-05 11:27:24 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:27:24 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:27:24 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:27:24 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:27:24 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:27:24 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:27:24 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:27:24 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:27:24 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:27:24 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@654e67e0: startup date [Mon Nov 05 11:27:23 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:27:24 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:27:24 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:27:24 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:27:24 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:27:24 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:27:24 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:27:24 -LiveReload server is running on port 35729
+2018-11-05 11:27:24 -Registering beans for JMX exposure on startup
+2018-11-05 11:27:24 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:27:24 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:27:24 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:27:24 -Started Application in 1.883 seconds (JVM running for 5356.677)
+2018-11-05 11:27:32 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@654e67e0: startup date [Mon Nov 05 11:27:23 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:27:32 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:27:32 -Unregistering JMX-exposed beans
+2018-11-05 11:27:33 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:27:33 -The following profiles are active: dev
+2018-11-05 11:27:33 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73ed21e0: startup date [Mon Nov 05 11:27:33 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:27:34 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:27:34 -Starting service [Tomcat]
+2018-11-05 11:27:34 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:27:34 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:27:34 -Root WebApplicationContext: initialization completed in 642 ms
+2018-11-05 11:27:34 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:27:34 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:27:34 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:27:34 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:27:34 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:27:34 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:27:34 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:27:34 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:27:34 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:27:34 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73ed21e0: startup date [Mon Nov 05 11:27:33 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:27:34 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:27:34 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:27:34 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:27:34 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:27:34 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:27:34 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:27:34 -LiveReload server is running on port 35729
+2018-11-05 11:27:34 -Registering beans for JMX exposure on startup
+2018-11-05 11:27:34 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:27:34 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:27:34 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:27:34 -Started Application in 1.479 seconds (JVM running for 5366.607)
+2018-11-05 11:29:19 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73ed21e0: startup date [Mon Nov 05 11:27:33 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:29:19 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:29:19 -Unregistering JMX-exposed beans
+2018-11-05 11:31:40 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:31:40 -The following profiles are active: dev
+2018-11-05 11:31:40 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@613a2b0: startup date [Mon Nov 05 11:31:40 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:41 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:31:41 -Starting service [Tomcat]
+2018-11-05 11:31:41 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:31:41 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:31:41 -Root WebApplicationContext: initialization completed in 722 ms
+2018-11-05 11:31:41 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:31:41 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:31:41 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:31:41 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:31:41 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:31:41 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:31:41 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:31:41 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:31:41 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:31:42 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@613a2b0: startup date [Mon Nov 05 11:31:40 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:42 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:31:42 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:31:42 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:31:42 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:42 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:42 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:42 -LiveReload server is running on port 35729
+2018-11-05 11:31:42 -Registering beans for JMX exposure on startup
+2018-11-05 11:31:42 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:31:42 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:31:42 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:31:42 -Started Application in 1.712 seconds (JVM running for 5614.269)
+2018-11-05 11:31:47 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@613a2b0: startup date [Mon Nov 05 11:31:40 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:47 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:31:47 -Unregistering JMX-exposed beans
+2018-11-05 11:31:47 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:31:47 -No active profile set, falling back to default profiles: default
+2018-11-05 11:31:47 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34145bd8: startup date [Mon Nov 05 11:31:47 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:48 -Tomcat initialized with port(s): 8080 (http)
+2018-11-05 11:31:48 -Starting service [Tomcat]
+2018-11-05 11:31:48 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:31:48 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:31:48 -Root WebApplicationContext: initialization completed in 987 ms
+2018-11-05 11:31:48 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:31:48 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:31:48 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:31:48 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:31:48 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:31:48 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:31:48 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:31:48 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:31:48 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:31:49 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34145bd8: startup date [Mon Nov 05 11:31:47 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:49 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:31:49 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:31:49 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:31:49 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:49 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:49 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:49 -LiveReload server is running on port 35729
+2018-11-05 11:31:49 -Registering beans for JMX exposure on startup
+2018-11-05 11:31:49 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:31:49 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:31:49 -Tomcat started on port(s): 8080 (http)
+2018-11-05 11:31:49 -Started Application in 1.91 seconds (JVM running for 5621.437)
+2018-11-05 11:31:51 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34145bd8: startup date [Mon Nov 05 11:31:47 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:51 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:31:51 -Unregistering JMX-exposed beans
+2018-11-05 11:31:51 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:31:51 -The following profiles are active: dev
+2018-11-05 11:31:51 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2401b470: startup date [Mon Nov 05 11:31:51 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:52 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:31:52 -Starting service [Tomcat]
+2018-11-05 11:31:52 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:31:52 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:31:52 -Root WebApplicationContext: initialization completed in 680 ms
+2018-11-05 11:31:52 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:31:52 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:31:52 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:31:52 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:31:52 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:31:52 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:31:52 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:31:52 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:31:52 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:31:52 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2401b470: startup date [Mon Nov 05 11:31:51 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:31:52 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:31:52 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:31:52 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:31:52 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:52 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:52 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:31:53 -LiveReload server is running on port 35729
+2018-11-05 11:31:53 -Registering beans for JMX exposure on startup
+2018-11-05 11:31:53 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:31:53 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:31:53 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:31:53 -Started Application in 1.569 seconds (JVM running for 5624.936)
+2018-11-05 11:32:08 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2401b470: startup date [Mon Nov 05 11:31:51 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:32:08 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:32:08 -Unregistering JMX-exposed beans
+2018-11-05 11:32:09 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:32:09 -The following profiles are active: dev
+2018-11-05 11:32:09 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79c9e19c: startup date [Mon Nov 05 11:32:09 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:32:09 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:32:09 -Starting service [Tomcat]
+2018-11-05 11:32:09 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:32:09 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:32:09 -Root WebApplicationContext: initialization completed in 633 ms
+2018-11-05 11:32:09 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:32:09 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:32:09 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:32:09 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:32:09 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:32:09 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:32:09 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:32:09 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:32:09 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:32:10 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79c9e19c: startup date [Mon Nov 05 11:32:09 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:32:10 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:32:10 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:32:10 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:32:10 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:32:10 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:32:10 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:32:10 -LiveReload server is running on port 35729
+2018-11-05 11:32:10 -Registering beans for JMX exposure on startup
+2018-11-05 11:32:10 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:32:10 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:32:10 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:32:10 -Started Application in 1.461 seconds (JVM running for 5642.195)
+2018-11-05 11:32:28 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79c9e19c: startup date [Mon Nov 05 11:32:09 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:32:28 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:32:28 -Unregistering JMX-exposed beans
+2018-11-05 11:32:28 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:32:28 -The following profiles are active: dev
+2018-11-05 11:32:28 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32283a5a: startup date [Mon Nov 05 11:32:28 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:32:29 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:32:29 -Starting service [Tomcat]
+2018-11-05 11:32:29 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:32:29 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:32:29 -Root WebApplicationContext: initialization completed in 678 ms
+2018-11-05 11:32:29 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:32:29 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:32:29 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:32:29 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:32:29 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:32:29 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:32:29 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:32:29 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:32:29 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:32:30 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32283a5a: startup date [Mon Nov 05 11:32:28 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:32:30 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:32:30 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:32:30 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:32:30 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:32:30 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:32:30 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:32:30 -LiveReload server is running on port 35729
+2018-11-05 11:32:30 -Registering beans for JMX exposure on startup
+2018-11-05 11:32:30 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:32:30 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:32:30 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:32:30 -Started Application in 1.55 seconds (JVM running for 5662.209)
+2018-11-05 11:32:51 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-05 11:32:51 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-05 11:32:51 -FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2018-11-05 11:32:51 -{dataSource-2} inited
+2018-11-05 11:34:54 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32283a5a: startup date [Mon Nov 05 11:32:28 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:34:54 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:34:54 -Unregistering JMX-exposed beans
+2018-11-05 11:34:54 -{dataSource-2} closed
+2018-11-05 11:34:55 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:34:55 -The following profiles are active: dev
+2018-11-05 11:34:55 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61d4c7ed: startup date [Mon Nov 05 11:34:55 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:34:57 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:34:57 -Starting service [Tomcat]
+2018-11-05 11:34:57 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:34:57 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:34:57 -Root WebApplicationContext: initialization completed in 1337 ms
+2018-11-05 11:34:57 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:34:57 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:34:57 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:34:57 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:34:57 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:34:57 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:34:57 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:34:57 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:34:57 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:34:57 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61d4c7ed: startup date [Mon Nov 05 11:34:55 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:34:57 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:34:57 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:34:57 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:34:57 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:34:57 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:34:57 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:34:58 -LiveReload server is running on port 35729
+2018-11-05 11:34:58 -Registering beans for JMX exposure on startup
+2018-11-05 11:34:58 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:34:58 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:34:58 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:34:58 -Started Application in 2.584 seconds (JVM running for 5809.992)
+2018-11-05 11:35:36 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61d4c7ed: startup date [Mon Nov 05 11:34:55 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:35:36 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 11:35:36 -Unregistering JMX-exposed beans
+2018-11-05 11:35:36 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 11:35:36 -The following profiles are active: dev
+2018-11-05 11:35:36 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f89cdc3: startup date [Mon Nov 05 11:35:36 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:35:37 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 11:35:37 -Starting service [Tomcat]
+2018-11-05 11:35:37 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 11:35:37 -Initializing Spring embedded WebApplicationContext
+2018-11-05 11:35:37 -Root WebApplicationContext: initialization completed in 1036 ms
+2018-11-05 11:35:38 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 11:35:38 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 11:35:38 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 11:35:38 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 11:35:38 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 11:35:38 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 11:35:38 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 11:35:38 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 11:35:38 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 11:35:38 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f89cdc3: startup date [Mon Nov 05 11:35:36 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 11:35:38 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 11:35:38 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 11:35:38 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 11:35:38 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:35:38 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:35:38 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 11:35:38 -LiveReload server is running on port 35729
+2018-11-05 11:35:38 -Registering beans for JMX exposure on startup
+2018-11-05 11:35:38 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 11:35:38 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 11:35:38 -Tomcat started on port(s): 80 (http)
+2018-11-05 11:35:38 -Started Application in 2.047 seconds (JVM running for 5850.616)
+2018-11-05 17:37:21 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-05 17:37:22 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-05 17:37:26 -FrameworkServlet 'dispatcherServlet': initialization completed in 3941 ms
+2018-11-05 17:37:30 -{dataSource-3} inited
+2018-11-05 17:39:15 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f89cdc3: startup date [Mon Nov 05 11:35:36 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 17:39:15 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 17:39:15 -Unregistering JMX-exposed beans
+2018-11-05 17:39:15 -{dataSource-3} closed
+2018-11-05 17:39:51 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 17:39:51 -The following profiles are active: dev
+2018-11-05 17:39:51 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71af93c6: startup date [Mon Nov 05 17:39:51 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 17:39:56 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 17:39:56 -Starting service [Tomcat]
+2018-11-05 17:39:56 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 17:39:56 -Initializing Spring embedded WebApplicationContext
+2018-11-05 17:39:56 -Root WebApplicationContext: initialization completed in 4526 ms
+2018-11-05 17:39:56 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 17:39:56 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 17:39:56 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 17:39:56 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 17:39:56 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 17:39:56 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 17:39:56 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 17:39:56 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 17:39:56 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 17:39:58 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71af93c6: startup date [Mon Nov 05 17:39:51 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 17:39:58 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 17:39:58 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 17:39:58 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 17:39:58 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 17:39:58 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 17:39:58 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 17:39:59 -LiveReload server is running on port 35729
+2018-11-05 17:39:59 -Registering beans for JMX exposure on startup
+2018-11-05 17:39:59 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 17:39:59 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 17:39:59 -Tomcat started on port(s): 80 (http)
+2018-11-05 17:39:59 -Started Application in 9.103 seconds (JVM running for 27710.494)
+2018-11-05 17:40:06 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71af93c6: startup date [Mon Nov 05 17:39:51 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 17:40:06 -Unregistering JMX-exposed beans on shutdown
+2018-11-05 17:40:06 -Unregistering JMX-exposed beans
+2018-11-05 17:40:07 -Starting Application on MS-20180106TIRW with PID 5836 (D:\Workspace\Springboot_Mybatis\Springboot_Mybatis\target\classes started by Administrator in D:\Workspace\Springboot_Mybatis\Springboot_Mybatis)
+2018-11-05 17:40:07 -The following profiles are active: dev
+2018-11-05 17:40:07 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14ca975: startup date [Mon Nov 05 17:40:07 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 17:40:09 -Tomcat initialized with port(s): 80 (http)
+2018-11-05 17:40:09 -Starting service [Tomcat]
+2018-11-05 17:40:09 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-11-05 17:40:09 -Initializing Spring embedded WebApplicationContext
+2018-11-05 17:40:09 -Root WebApplicationContext: initialization completed in 1947 ms
+2018-11-05 17:40:09 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 17:40:09 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 17:40:09 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-05 17:40:09 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 17:40:09 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-05 17:40:09 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-05 17:40:09 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-05 17:40:09 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-05 17:40:09 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-11-05 17:40:10 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14ca975: startup date [Mon Nov 05 17:40:07 GMT+08:00 2018]; root of context hierarchy
+2018-11-05 17:40:10 -Mapped "{[/user/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers()
+2018-11-05 17:40:10 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-05 17:40:10 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-05 17:40:10 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 17:40:10 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 17:40:10 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-05 17:40:10 -LiveReload server is running on port 35729
+2018-11-05 17:40:10 -Registering beans for JMX exposure on startup
+2018-11-05 17:40:10 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-05 17:40:10 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-05 17:40:10 -Tomcat started on port(s): 80 (http)
+2018-11-05 17:40:10 -Started Application in 3.812 seconds (JVM running for 27722.12)
+2018-11-05 17:40:12 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-05 17:40:12 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-05 17:40:12 -FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018-11-05 17:40:12 -{dataSource-4} inited

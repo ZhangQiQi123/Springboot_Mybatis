@@ -1,2 +1,3 @@
 # Springboot_Mybatis
-springboot+mybatis+mysql
+
+springboot+mybatis+mysql+thymeleaf

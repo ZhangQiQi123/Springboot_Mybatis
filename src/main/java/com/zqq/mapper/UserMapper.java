@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.zqq.model.User;
 
+
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
 
