@@ -7,13 +7,21 @@
     <result column="password" property="password" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+<<<<<<< HEAD
     <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
     <result column="price" property="price" jdbcType="DECIMAL" />
     <association property="role" column="role_id" resultMap="com.zqq.mapper.RoleMapper.roleMap" javaType="role"></association>
+=======
+    <result column="price" property="price" jdbcType="DECIMAL" />
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
   </resultMap>
   
   <sql id="Base_Column_List" >
+<<<<<<< HEAD
     a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price
+=======
+    user_id, user_name, password, phone,create_time,price
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
   </sql>
   <sql id="role_Column_List" >
     b.role_id,b.role_name,b.create_time,b.update_time,b.remark

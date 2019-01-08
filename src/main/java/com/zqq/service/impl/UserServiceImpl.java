@@ -15,7 +15,7 @@ import com.github.pagehelper.PageHelper;
 import com.zqq.mapper.UserMapper;
 import com.zqq.model.User;
 import com.zqq.service.UserService;
-@Service("userService")
+@Service
 public class UserServiceImpl implements UserService {
 
 	@Autowired
@@ -58,6 +58,7 @@ public class UserServiceImpl implements UserService {
 		return userMapper.deleteByPrimaryKey(userId);
 	}
 
+<<<<<<< HEAD
 	@Override
 	public User getUserByUserNameAndPwd(User user) {
 		return userMapper.selectByUserNameAndPwd(user);
@@ -78,4 +79,6 @@ public class UserServiceImpl implements UserService {
         return userMapper.getUsersByPage(params);
 	}
 
+=======
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 }

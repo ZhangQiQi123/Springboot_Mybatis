@@ -7,11 +7,20 @@
 <body>
 	<!-- 引入头部信息 在fragments/header页面中的header片段 -->
 	<div th:replace="fragments/header :: header"></div>
+<<<<<<< HEAD
 	<form action="showAllUser" method="post">
 		用户名称：<input type="text" name="userName" autocomplete="on"/>
 		用户密码：<input type="password" name="password" autocomplete="on"/>
 		用户电话：<input type="text" name="phone" autocomplete="on"/>
 		价格：<input type="text" name="price" autocomplete="on"/>
+=======
+	<form action="showAllUsers" method="post">
+		用户名称：<input type="text" name="userName"/>
+		用户密码：<input type="password" name="password"/>
+		用户电话：<input type="text" name="phone"/>
+		创建时间：<input type="text" name="createTime"/>
+		价格：<input type="text" name="price"/>
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 		<button type="submit">提交</button> 
 	</form>
 	<!-- 引入底部信息 在fragments/header页面中的header片段 -->

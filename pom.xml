@@ -23,11 +23,16 @@
   	</properties>  
   	
   	<dependencies> 
+<<<<<<< HEAD
   		<!-- 发布时的配置start -->
+=======
+  		<!-- spring web -->
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
   	   <dependency> 
 		   <groupId>org.springframework.boot</groupId> 
 		   <artifactId>spring-boot-starter-web</artifactId> 
 	   </dependency>
+<<<<<<< HEAD
 	   <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -36,14 +41,26 @@
         </dependency>
          <!-- 发布时的配置end -->  
          
+=======
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 	   <!-- 运行在外置的tomcat -->
        <dependency>
        	<groupId>org.springframework.boot</groupId>
        	<artifactId>spring-boot-starter-tomcat</artifactId>
        	<!-- <scope>provided</scope> -->
+<<<<<<< HEAD
        	<!-- <scope>compile</scope> -->
        </dependency>
 	   
+=======
+       	<scope>compile</scope>
+       </dependency>
+	   <!-- aop依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
         <!--thymeleaf模板-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -53,17 +70,24 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+<<<<<<< HEAD
+=======
+            <!--<scope>test</scope>-->
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
         </dependency>
           <!--jdbc-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
+<<<<<<< HEAD
         <!-- aop依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+=======
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 	    <!-- mysql驱动 -->
 	   <dependency> 
 		   <groupId>mysql</groupId> 
@@ -94,6 +118,27 @@
 		   <artifactId>mybatis-spring-boot-starter</artifactId> 
 		   <version>1.3.2</version> 
 	   </dependency> 
+<<<<<<< HEAD
+=======
+	    <!-- alibaba的druid数据库连接池 --> 
+	   <dependency> 
+		   <groupId>com.alibaba</groupId> 
+		   <artifactId>druid-spring-boot-starter</artifactId> 
+		   <version>1.1.0</version> 
+	   </dependency> 
+	     <!--persistence-->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+	    <!-- spring-boot整合mybatis -->
+	   <dependency> 
+		   <groupId>org.mybatis.spring.boot</groupId> 
+		   <artifactId>mybatis-spring-boot-starter</artifactId> 
+		   <version>1.3.0</version> 
+	   </dependency> 
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 	   <!-- 通用 mapper -->
         <dependency>
             <groupId>tk.mybatis</groupId>
@@ -174,6 +219,7 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.5</version>
         </dependency>
+<<<<<<< HEAD
         <!-- 分页 -->
         <!-- <dependency>
         	<groupId>net.oschina.durcframework</groupId> 
@@ -181,6 +227,8 @@
         	<version>1.0.3</version> 
         </dependency> -->
 
+=======
+>>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 	    <!-- 基本配置 -->
         <dependency>
             <groupId>junit</groupId>

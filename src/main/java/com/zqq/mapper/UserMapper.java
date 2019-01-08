@@ -7,6 +7,7 @@ import java.util.Map;
 import com.github.pagehelper.Page;
 import com.zqq.model.User;
 
+
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
 
