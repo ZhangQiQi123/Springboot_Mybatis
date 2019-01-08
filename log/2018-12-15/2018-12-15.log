@@ -1,0 +1,471 @@
+2018-12-15 22:19:27 -Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-12-15 22:19:27 -Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-12-15 22:19:27 -Adding [systemProperties] PropertySource with lowest search precedence
+2018-12-15 22:19:27 -Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-12-15 22:19:27 -Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2018-12-15 22:19:27 -Starting Application on DESKTOP-PLKM4IJ with PID 17240 (started by 17612 in D:\ZhangQi\Java\架构\Springboot_Mybatis\Springboot_Mybatis)
+2018-12-15 22:19:27 -The following profiles are active: dev
+2018-12-15 22:19:27 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a921141: startup date [Sat Dec 15 22:19:27 CST 2018]; root of context hierarchy
+2018-12-15 22:19:27 -HV000001: Hibernate Validator 5.3.5.Final
+2018-12-15 22:19:28 -Adding [applicationConfig: [classpath:/application-dev.properties]] PropertySource with search precedence immediately lower than [applicationConfigurationProperties]
+2018-12-15 22:19:28 -Adding [applicationConfig: [classpath:/application.properties]] PropertySource with search precedence immediately lower than [applicationConfig: [classpath:/application-dev.properties]]
+2018-12-15 22:19:28 -Removing [applicationConfigurationProperties] PropertySource
+2018-12-15 22:19:28 -Removing [defaultProperties] PropertySource
+2018-12-15 22:19:29 -Tomcat initialized with port(s): 8080 (http)
+2018-12-15 22:19:29 -Starting service Tomcat
+2018-12-15 22:19:29 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2018-12-15 22:19:29 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-12-15 22:19:29 -Initializing Spring embedded WebApplicationContext
+2018-12-15 22:19:29 -Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-12-15 22:19:29 -Root WebApplicationContext: initialization completed in 2381 ms
+2018-12-15 22:19:30 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-15 22:19:30 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-15 22:19:30 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-15 22:19:30 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-15 22:19:30 -Mapping filter: 'MyFilter' to urls: [/*]
+2018-12-15 22:19:30 -Mapping filter: 'remoteIpFilter' to: [/*]
+2018-12-15 22:19:30 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-15 22:19:30 -Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2018-12-15 22:19:30 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a921141: startup date [Sat Dec 15 22:19:27 CST 2018]; root of context hierarchy
+2018-12-15 22:19:30 -Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a921141: startup date [Sat Dec 15 22:19:27 CST 2018]; root of context hierarchy
+2018-12-15 22:19:30 -6 request handler methods found on class com.zqq.ctrl.UserControllor: {public java.util.Map com.zqq.ctrl.UserControllor.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse)={[/login]}, public java.lang.String com.zqq.ctrl.UserControllor.login(org.springframework.ui.Model)={[/addUser]}, public java.lang.String com.zqq.ctrl.UserControllor.deleteUserById(com.zqq.model.User,org.springframework.ui.Model)={[/deleteById]}, public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers(org.springframework.ui.Model)={[/getAllUser]}, public java.lang.String com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,org.springframework.ui.Model)={[/getUserById]}, public java.lang.String com.zqq.ctrl.UserControllor.addUser(com.zqq.model.User)={[/showAllUser]}}
+2018-12-15 22:19:30 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse)
+2018-12-15 22:19:30 -Mapped "{[/addUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.login(org.springframework.ui.Model)
+2018-12-15 22:19:30 -Mapped "{[/deleteById]}" onto public java.lang.String com.zqq.ctrl.UserControllor.deleteUserById(com.zqq.model.User,org.springframework.ui.Model)
+2018-12-15 22:19:30 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers(org.springframework.ui.Model)
+2018-12-15 22:19:30 -Mapped "{[/getUserById]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,org.springframework.ui.Model)
+2018-12-15 22:19:30 -Mapped "{[/showAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.addUser(com.zqq.model.User)
+2018-12-15 22:19:30 -2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}}
+2018-12-15 22:19:30 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-15 22:19:30 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-15 22:19:30 -Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a921141: startup date [Sat Dec 15 22:19:27 CST 2018]; root of context hierarchy
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'application': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'jdbcConfig': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'webConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'userControllor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'userService': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'remoteIpFilter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'testFilterRegistration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'userMapper': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'servletComponentRegisteringPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'standardJacksonObjectMapperBuilderCustomizer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'parameterNamesModule': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JodaDateTimeJacksonConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'jodaDateTimeSerializationModule': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'jsonComponentModule': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'errorPageRegistrarBeanPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'dispatcherServlet': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'defaultValidator': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'methodValidationPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'error': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'beanNameViewResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'conventionErrorViewResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'errorAttributes': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'basicErrorController': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'errorPageCustomizer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcValidator': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcPathMatcher': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcConversionService': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mvcViewResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'faviconHandlerMapping': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'faviconRequestHandler': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'defaultViewResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'viewResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'welcomePageHandlerMapping': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'requestContextFilter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'dataSource': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'dataSourceInitializer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'sqlSessionFactory': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'sqlSessionTemplate': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'pageHelperProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'pagehelper-com.github.pagehelper.autoconfigure.PageHelperProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mbeanExporter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'objectNamingStrategy': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mbeanServer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'messageConverters': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'transactionManager': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'jdbcTemplate': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafResourceHandlingConfig': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafWebLayoutConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'layoutDialect': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafDefaultConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'templateEngine': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$Thymeleaf2Configuration$Thymeleaf2ViewResolverConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'thymeleafViewResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$Thymeleaf2Configuration$DefaultTemplateResolverConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'thymeleafResourceResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'defaultTemplateResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$Thymeleaf2Configuration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'transactionAttributeSource': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'transactionInterceptor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'transactionTemplate': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'platformTransactionManagerCustomizers': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'characterEncodingFilter': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'localeCharsetMappingsCustomizer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'multipartConfigElement': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'multipartResolver': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'serverProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'restTemplateBuilder': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'inMemoryDatabaseShutdownExecutor': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'classPathFileSystemWatcher': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'classPathRestartStrategy': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'hateoasObjenesisCacheDisabler': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'fileSystemWatcherFactory': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'liveReloadServer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'optionalLiveReloadServer': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'autoConfigurationReport': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'springApplicationArguments': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'springBootBanner': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'springBootLoggingSystem': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'environment': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'systemProperties': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'systemEnvironment': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'messageSource': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'servletContext': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'contextParameters': no URL paths identified
+2018-12-15 22:19:30 -Rejected bean name 'contextAttributes': no URL paths identified
+2018-12-15 22:19:30 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-15 22:19:30 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-15 22:19:30 -Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a921141: startup date [Sat Dec 15 22:19:27 CST 2018]; root of context hierarchy
+2018-12-15 22:19:30 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-15 22:19:31 -LiveReload server is running on port 35729
+2018-12-15 22:19:31 -Registering beans for JMX exposure on startup
+2018-12-15 22:19:31 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-15 22:19:31 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-15 22:19:31 -Looking for resource handler mappings
+2018-12-15 22:19:31 -Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@65ca7a44]
+2018-12-15 22:19:31 -Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@1b3f563c]
+2018-12-15 22:19:31 -Found resource handler mapping: URL pattern="/**", locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]
+2018-12-15 22:19:31 -Initializing ProtocolHandler ["http-nio-8080"]
+2018-12-15 22:19:31 -Starting ProtocolHandler ["http-nio-8080"]
+2018-12-15 22:19:31 -Using a shared selector for servlet write/read
+2018-12-15 22:19:31 -Tomcat started on port(s): 8080 (http)
+2018-12-15 22:19:31 -Adding [server.ports] PropertySource with highest search precedence
+2018-12-15 22:19:31 -Started Application in 5.102 seconds (JVM running for 6.007)
+2018-12-15 22:19:31 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2018-12-15 22:19:52 -Initializing servlet 'dispatcherServlet'
+2018-12-15 22:19:52 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-15 22:19:52 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-15 22:19:52 -Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@1a7da27d]
+2018-12-15 22:19:52 -Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@fdbbee7]
+2018-12-15 22:19:52 -Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@29c391da]
+2018-12-15 22:19:52 -Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@41c406a2]
+2018-12-15 22:19:52 -Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@77364edc]
+2018-12-15 22:19:52 -Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+2018-12-15 22:19:52 -FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2018-12-15 22:19:52 -Servlet 'dispatcherServlet' configured successfully
+2018-12-15 22:19:52 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/getAllUser]
+2018-12-15 22:19:52 -Looking up handler method for path /Springboot_Mybatis/getAllUser
+2018-12-15 22:19:52 -Did not find handler method for [/Springboot_Mybatis/getAllUser]
+2018-12-15 22:19:52 -Matching patterns for request [/Springboot_Mybatis/getAllUser] are [/**]
+2018-12-15 22:19:52 -URI Template variables for request [/Springboot_Mybatis/getAllUser] are {}
+2018-12-15 22:19:52 -Mapping [/Springboot_Mybatis/getAllUser] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:19:52 -Last-Modified value for [/Springboot_Mybatis/getAllUser] is: -1
+2018-12-15 22:19:52 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:19:52 -Successfully completed request
+2018-12-15 22:19:52 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:19:52 -Looking up handler method for path /error
+2018-12-15 22:19:52 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:19:52 -Last-Modified value for [/error] is: -1
+2018-12-15 22:19:52 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:19:52 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:19:52 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:19:52 -Successfully completed request
+2018-12-15 22:19:59 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:19:59 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:19:59 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:19:59 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:19:59 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:19:59 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:19:59 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:19:59 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:19:59 -Successfully completed request
+2018-12-15 22:19:59 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:19:59 -Looking up handler method for path /error
+2018-12-15 22:19:59 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:19:59 -Last-Modified value for [/error] is: -1
+2018-12-15 22:19:59 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:19:59 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:19:59 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:19:59 -Successfully completed request
+2018-12-15 22:20:24 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:20:24 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:20:24 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:20:24 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:20:24 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:20:24 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:20:24 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:20:24 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:20:24 -Successfully completed request
+2018-12-15 22:20:24 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:20:24 -Looking up handler method for path /error
+2018-12-15 22:20:24 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:20:24 -Last-Modified value for [/error] is: -1
+2018-12-15 22:20:24 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:20:24 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:20:24 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:20:24 -Successfully completed request
+2018-12-15 22:20:31 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:20:31 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:20:31 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:20:31 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:20:31 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:20:31 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:20:31 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:20:31 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:20:31 -Successfully completed request
+2018-12-15 22:20:31 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:20:31 -Looking up handler method for path /error
+2018-12-15 22:20:31 -Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+2018-12-15 22:20:31 -Last-Modified value for [/error] is: -1
+2018-12-15 22:20:31 -Written [{timestamp=Sat Dec 15 22:20:31 CST 2018, status=404, error=Not Found, message=No message available, path=/Springboot_Mybatis/login}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@5d75e60c]
+2018-12-15 22:20:31 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:20:31 -Successfully completed request
+2018-12-15 22:20:35 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:20:35 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:20:35 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:20:35 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:20:35 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:20:35 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:20:35 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:20:35 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:20:35 -Successfully completed request
+2018-12-15 22:20:35 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:20:35 -Looking up handler method for path /error
+2018-12-15 22:20:35 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:20:35 -Last-Modified value for [/error] is: -1
+2018-12-15 22:20:35 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:20:35 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:20:35 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:20:35 -Successfully completed request
+2018-12-15 22:21:04 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/getAlluser]
+2018-12-15 22:21:04 -Looking up handler method for path /Springboot_Mybatis/getAlluser
+2018-12-15 22:21:04 -Did not find handler method for [/Springboot_Mybatis/getAlluser]
+2018-12-15 22:21:04 -Matching patterns for request [/Springboot_Mybatis/getAlluser] are [/**]
+2018-12-15 22:21:04 -URI Template variables for request [/Springboot_Mybatis/getAlluser] are {}
+2018-12-15 22:21:04 -Mapping [/Springboot_Mybatis/getAlluser] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:21:04 -Last-Modified value for [/Springboot_Mybatis/getAlluser] is: -1
+2018-12-15 22:21:04 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:21:04 -Successfully completed request
+2018-12-15 22:21:04 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:21:04 -Looking up handler method for path /error
+2018-12-15 22:21:04 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:21:04 -Last-Modified value for [/error] is: -1
+2018-12-15 22:21:04 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:21:04 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:21:04 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:21:04 -Successfully completed request
+2018-12-15 22:21:26 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/getAllUser]
+2018-12-15 22:21:26 -Looking up handler method for path /Springboot_Mybatis/getAllUser
+2018-12-15 22:21:26 -Did not find handler method for [/Springboot_Mybatis/getAllUser]
+2018-12-15 22:21:26 -Matching patterns for request [/Springboot_Mybatis/getAllUser] are [/**]
+2018-12-15 22:21:26 -URI Template variables for request [/Springboot_Mybatis/getAllUser] are {}
+2018-12-15 22:21:26 -Mapping [/Springboot_Mybatis/getAllUser] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:21:26 -Last-Modified value for [/Springboot_Mybatis/getAllUser] is: -1
+2018-12-15 22:21:26 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:21:26 -Successfully completed request
+2018-12-15 22:21:26 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:21:26 -Looking up handler method for path /error
+2018-12-15 22:21:26 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:21:26 -Last-Modified value for [/error] is: -1
+2018-12-15 22:21:26 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:21:26 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:21:26 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:21:26 -Successfully completed request
+2018-12-15 22:21:35 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/getAllUser]
+2018-12-15 22:21:35 -Looking up handler method for path /Springboot_Mybatis/getAllUser
+2018-12-15 22:21:35 -Did not find handler method for [/Springboot_Mybatis/getAllUser]
+2018-12-15 22:21:35 -Matching patterns for request [/Springboot_Mybatis/getAllUser] are [/**]
+2018-12-15 22:21:35 -URI Template variables for request [/Springboot_Mybatis/getAllUser] are {}
+2018-12-15 22:21:35 -Mapping [/Springboot_Mybatis/getAllUser] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:21:35 -Last-Modified value for [/Springboot_Mybatis/getAllUser] is: -1
+2018-12-15 22:21:35 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:21:35 -Successfully completed request
+2018-12-15 22:21:35 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:21:35 -Looking up handler method for path /error
+2018-12-15 22:21:35 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:21:35 -Last-Modified value for [/error] is: -1
+2018-12-15 22:21:35 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:21:35 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:21:35 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:21:35 -Successfully completed request
+2018-12-15 22:22:46 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:22:46 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:22:46 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:22:46 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:22:46 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:22:46 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:22:46 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:22:46 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:22:46 -Successfully completed request
+2018-12-15 22:22:46 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:22:46 -Looking up handler method for path /error
+2018-12-15 22:22:46 -Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+2018-12-15 22:22:46 -Last-Modified value for [/error] is: -1
+2018-12-15 22:22:46 -Written [{timestamp=Sat Dec 15 22:22:46 CST 2018, status=404, error=Not Found, message=No message available, path=/Springboot_Mybatis/login}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@5d75e60c]
+2018-12-15 22:22:46 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:22:46 -Successfully completed request
+2018-12-15 22:22:49 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:22:49 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:22:49 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:22:49 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:22:49 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:22:49 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:22:49 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:22:49 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:22:49 -Successfully completed request
+2018-12-15 22:22:49 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:22:49 -Looking up handler method for path /error
+2018-12-15 22:22:49 -Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+2018-12-15 22:22:49 -Last-Modified value for [/error] is: -1
+2018-12-15 22:22:49 -Written [{timestamp=Sat Dec 15 22:22:49 CST 2018, status=404, error=Not Found, message=No message available, path=/Springboot_Mybatis/login}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@5d75e60c]
+2018-12-15 22:22:49 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:22:49 -Successfully completed request
+2018-12-15 22:22:51 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:22:51 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:22:51 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:22:51 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:22:51 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:22:51 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:22:51 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:22:51 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:22:51 -Successfully completed request
+2018-12-15 22:22:51 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:22:51 -Looking up handler method for path /error
+2018-12-15 22:22:51 -Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+2018-12-15 22:22:51 -Last-Modified value for [/error] is: -1
+2018-12-15 22:22:51 -Written [{timestamp=Sat Dec 15 22:22:51 CST 2018, status=404, error=Not Found, message=No message available, path=/Springboot_Mybatis/login}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@5d75e60c]
+2018-12-15 22:22:51 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:22:51 -Successfully completed request
+2018-12-15 22:23:01 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Springboot_Mybatis/login]
+2018-12-15 22:23:01 -Looking up handler method for path /Springboot_Mybatis/login
+2018-12-15 22:23:01 -Did not find handler method for [/Springboot_Mybatis/login]
+2018-12-15 22:23:01 -Matching patterns for request [/Springboot_Mybatis/login] are [/**]
+2018-12-15 22:23:01 -URI Template variables for request [/Springboot_Mybatis/login] are {}
+2018-12-15 22:23:01 -Mapping [/Springboot_Mybatis/login] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [static/], class path resource [public/], class path resource [resources/], class path resource [META-INF/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7a99bc8b]]] and 1 interceptor
+2018-12-15 22:23:01 -Last-Modified value for [/Springboot_Mybatis/login] is: -1
+2018-12-15 22:23:01 -Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2018-12-15 22:23:01 -Successfully completed request
+2018-12-15 22:23:01 -DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2018-12-15 22:23:01 -Looking up handler method for path /error
+2018-12-15 22:23:01 -Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2018-12-15 22:23:01 -Last-Modified value for [/error] is: -1
+2018-12-15 22:23:01 -Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2018-12-15 22:23:01 -Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] based on requested media type 'text/html'
+2018-12-15 22:23:01 -Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@456cc817] in DispatcherServlet with name 'dispatcherServlet'
+2018-12-15 22:23:01 -Successfully completed request

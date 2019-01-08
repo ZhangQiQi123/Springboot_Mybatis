@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>头部</title>
+<link rel="stylesheet" data-th-href="@{fragments/css/header.css}" type="text/css"></link>
+</head>
+<body>
+	<!-- fragment:公共片段名 -->
+	<div th:fragment="header" class="header">
+		<h1>头部</h1>
+		<a th:href="@{getAllUser}">首页</a>
+	</div>
+</body>
+</html>

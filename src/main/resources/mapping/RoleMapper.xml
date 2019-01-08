@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqq.mapper.RoleMapper" >
+	<resultMap type="role" id="roleMap">
+		<id property="roleId" column="role_id" jdbcType="INTEGER"/>
+		<result property="roleName" column="role_name" jdbcType="VARCHAR"/>
+		<result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+		<result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>		
+	</resultMap>
+	<sql id="role_column_list">
+		role_id,role_name,create_time,update_time
+	</sql>
+	<select id="getAllRoles" resultMap="roleMap">
+		select 
+		<include refid="role_column_list"/>
+		from role
+	</select>
+	<select id="selectByPrimaryKey" resultMap="roleMap" parameterType="INT">
+		select <include refid="role_column_list"/>
+		from role where role_id=#{0}
+	</select>
+</mapper>

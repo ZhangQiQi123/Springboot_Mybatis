@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>用户详情</title>
+<link type="text/css" rel="stylesheet" data-th-href="@{user/css/userInfo.css}"></link>
+</head>
+<body>
+	<div th:replace="fragments/header :: header"></div>
+	<div>
+		<ul>
+			<li>ID:<span th:text="${user.userId}"></span></li>
+			<li>用户名:<span th:text="${user.userName}"></span></li>
+			<li>密码:<span th:text="${user.password}"></span></li>
+			<li>电话:<span th:text="${user.phone}"></span></li>
+			<li>价格:<span th:text="${user.price}"></span></li>
+			<li>日期:<span th:text="${#calendars.format(user.createTime,'yyyy-MM-dd hh:mm:ss')}"></span></li>
+			
+		</ul>
+	</div>
+	<div th:replace="fragments/footer :: footer"></div>
+	<script type="text/javascript" data-th-src="@{js/jquery-2.1.1.min.js}"></script>
+	<script type="text/javascript" data-th-src="@{user/js/userInfo.js}"></script>
+</body>
+</html>

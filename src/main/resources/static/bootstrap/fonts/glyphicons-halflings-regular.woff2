@@ -1,0 +1,95 @@
+#创建AML跑批状态表
+create table tbamlbatchstate
+(
+  iID varchar(4) primary key NOT NULL,
+  dStartTime datetime DEFAULT NULL,
+  dEndTime datetime DEFAULT NULL,
+  cBatchName varchar(64) DEFAULT NULL,
+  iBatchState int(11) DEFAULT NULL,
+  cErrCode int(11) DEFAULT NULL,
+  cErrMessage varchar(100) DEFAULT NULL,
+  reset int(11) DEFAULT NULL,
+  finish int(11) DEFAULT NULL,
+  element varchar(50) DEFAULT NULL
+);
+
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5001', '2017-05-17 10:05:42', '2017-05-17 10:05:42', '获取文件 batch job', '0', '0', '', '1', '1', 'aml1');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5002', '2017-05-17 10:05:42', '2017-05-17 10:05:42', '文件校验 batch job', '0', '0', '', '1', '1', 'aml2');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5003', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'unzip batch job', '0', '0', '', '1', '1', 'aml3');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5004', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'ImportGWL batch job', '0', '0', '', '1', '1', 'aml4');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5005', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'ImportPEP batch job', '0', '0', '', '1', '1', 'aml5');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5006', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'ImportEDD batch job', '0', '0', '', '1', '1', 'aml6');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5007', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'ImportMSB batch job', '0', '0', '', '1', '1', 'aml7');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5008', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'exportGWL batch job', '0', '0', '', '1', '1', 'aml8');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5009', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'exportPartyGWL batch job', '0', '0', '', '1', '1', 'aml9');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5010', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'exportFULL batch job', '0', '0', '', '1', '1', 'aml10');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5011', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'MergePartyGWL&PEP batch job', '0', '0', '', '1', '1', 'aml11');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5012', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'validationFull batch job', '0', '0', '', '1', '1', 'aml12');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5013', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'validationGWL batch job', '0', '0', '', '1', '1', 'aml13');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5014', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'createDelta batch job', '0', '0', '', '1', '1', 'aml14');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5015', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'reportDelta batch job', '0', '0', '', '1', '1', 'aml15');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5016', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'SWIFT batch job', '0', '0', '', '1', '1', 'aml16');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5017', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'FUF batch job', '0', '0', '', '1', '1', 'aml17');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5018', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'FinalKZforProd batch job', '0', '0', '', '1', '1', 'aml18');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5019', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'OnlineCpFile batch job', '0', '0', '', '1', '1', 'aml19');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5020', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'OnlineRestartService batch job', '0', '0', '', '1', '1', 'aml20');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5021', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'continuityCpFile batch job', '0', '0', '', '1', '1', 'aml21');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5022', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'ContinuityRestartService batch job', '0', '0', '', '1', '1', 'aml22');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5023', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'TrustCpFile batch job', '0', '0', '', '1', '1', 'aml23');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5024', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifCpFile batch job', '0', '0', '', '1', '1', 'aml24');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5025', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifFPFile batch job', '0', '0', '', '1', '1', 'aml25');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5026', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifFPFeed batch job', '0', '0', '', '1', '1', 'aml26');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5027', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifDPFile batch job', '0', '0', '', '1', '1', 'aml27');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5028', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifDPFeed batch job', '0', '0', '', '1', '1', 'aml28');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5029', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifDFFile batch job', '0', '0', '', '1', '1', 'aml29');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5030', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifDFFeed batch job', '0', '0', '', '1', '1', 'aml30');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5031', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifFDFile batch job', '0', '0', '', '1', '1', 'aml31');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5032', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifFDFeed batch job', '0', '0', '', '1', '1', 'aml32');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5033', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'cifReport batch job', '0', '0', '', '1', '1', 'aml33');
+
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5034', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'AuthsignersFPFile batch job', '0', '0', '', '1', '1', 'aml34');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5035', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'AuthsignersFPFeed batch job', '0', '0', '', '1', '1', 'aml35');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5036', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'AuthsignersFFFile batch job', '0', '0', '', '1', '1', 'aml36');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5037', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'AuthsignersFFFeed batch job', '0', '0', '', '1', '1', 'aml37');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5038', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'AuthsignersReport batch job', '0', '0', '', '1', '1', 'aml38');
+
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5039', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'BOFPFile batch job', '0', '0', '', '1', '1', 'aml39');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5040', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'BOFPFeed batch job', '0', '0', '', '1', '1', 'aml40');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5041', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'BOFFFile batch job', '0', '0', '', '1', '1', 'aml41');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5042', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'BOFFFeed batch job', '0', '0', '', '1', '1', 'aml42');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5043', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'BOReport batch job', '0', '0', '', '1', '1', 'aml43');
+
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5044', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'EmployeeFPFile batch job', '0', '0', '', '1', '1', 'aml44');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5045', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'EmploueeFPFeed batch job', '0', '0', '', '1', '1', 'aml45');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5046', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'EmployeeFFFile batch job', '0', '0', '', '1', '1', 'aml46');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5047', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'EmployeeFFFeed batch job', '0', '0', '', '1', '1', 'aml47');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5048', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'EmployeeReport batch job', '0', '0', '', '1', '1', 'aml48');
+
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5049', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'LoanGuarantorsFPFile batch job', '0', '0', '', '1', '1', 'aml49');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5050', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'LoanGuarantorsFPFeed batch job', '0', '0', '', '1', '1', 'aml50');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5051', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'LoanGuarantorsFFFile batch job', '0', '0', '', '1', '1', 'aml51');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5052', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'LoanGuarantorsFFFeed batch job', '0', '0', '', '1', '1', 'aml52');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5053', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'LoanGuarantorsReport batch job', '0', '0', '', '1', '1', 'aml53');
+
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5054', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'VendorFPFile batch job', '0', '0', '', '1', '1', 'aml54');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5055', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'VendorFPFeed batch job', '0', '0', '', '1', '1', 'aml55');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5056', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'VendorFFFile batch job', '0', '0', '', '1', '1', 'aml56');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5057', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'VendorFFFeed batch job', '0', '0', '', '1', '1', 'aml57');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5058', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'VendorReport batch job', '0', '0', '', '1', '1', 'aml58');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5059', '2017-05-17 10:05:42', '2017-05-17 10:05:42', '数据归档 batch job', '0', '0', '', '1', '1', 'aml59');
+INSERT INTO `abdb`.`tbamlbatchstate` (`iID`, `dStartTime`, `dEndTime`, `cBatchName`, `iBatchState`, `cErrCode`, `cErrMessage`, `reset`, `finish`, `element`) VALUES ('5060', '2017-05-17 10:05:42', '2017-05-17 10:05:42', 'aml批后检查 batch job', '0', '0', '', '0', '0', 'aml60');
+select iid,iBatchState,element from tbamlbatchstate;
+
+#系统名称
+insert into tb_dict_item values(2,23,'Autobatch');
+#系统类型
+insert into tb_dict_item values(3,22,'Trust');
+insert into tb_dict_item values(3,23,'Online');
+insert into tb_dict_item values(3,24,'Utility');
+insert into tb_dict_item values(3,25,'Continuity');
+insert into tb_dict_item values(3,26,'Autobatch2');
+
+#AML4.0系统配置
+insert into tbsystempasd (csystemName,csystemtype,cusername,cipaddress,system_num,system_type_num) values('AML','Trust','administrator','10.22.69.221',7,22);
+insert into tbsystempasd (csystemName,csystemtype,cusername,cipaddress,system_num,system_type_num) values('AML','Online','administrator','10.22.69.223',7,23);
+insert into tbsystempasd (csystemName,csystemtype,cusername,cipaddress,system_

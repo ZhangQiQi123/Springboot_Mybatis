@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.zqq.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="user" >
+  <resultMap id="userMap" type="user" >
     <id column="user_id" property="userId" jdbcType="INTEGER" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="price" property="price" jdbcType="DECIMAL" />
+    <association property="role" column="role_id" resultMap="com.zqq.mapper.RoleMapper.roleMap" javaType="role"></association>
   </resultMap>
+  
   <sql id="Base_Column_List" >
-    user_id, user_name, password, phone
+    a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
-    <include refid="Base_Column_List" />
-    from t_user
-    where user_id = #{userId,jdbcType=INTEGER}
+  <sql id="role_Column_List" >
+    b.role_id,b.role_name,b.create_time,b.update_time,b.remark
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="userMap" parameterType="java.lang.Integer" >
+    select  <include refid="Base_Column_List" />,<include refid="role_Column_List"></include>
+    from t_user a inner join role b on a.role_id=b.role_id where a.user_id = #{userId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from t_user
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="user" >
-    insert into t_user (user_id, user_name, password, 
-      phone)
-    values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=VARCHAR})
+    insert into t_user (user_name, password, 
+      phone,create_time,price)
+    values (#{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{phone,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{price,jdbcType=DECIMAL})
   </insert>
   <insert id="insertSelective" parameterType="user" >
     insert into t_user
@@ -60,14 +66,22 @@
   <update id="updateByPrimaryKeySelective" parameterType="user" >
     update t_user
     <set >
-      <if test="userName != null" >
+      <if test="userName != null and userName != '' " >
         user_name = #{userName,jdbcType=VARCHAR},
       </if>
-      <if test="password != null" >
+      <if test="password != null and password != '' " >
         password = #{password,jdbcType=VARCHAR},
       </if>
-      <if test="phone != null" >
+      <if test="phone != null and phone != '' " >
         phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+      	<if test="role.roleId != null and role.roleId != '' ">
+      		role_id =#(roleId,jdbcType=INTEGER),
+      	</if>
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where user_id = #{userId,jdbcType=INTEGER}
@@ -79,9 +93,26 @@
       phone = #{phone,jdbcType=VARCHAR}
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
-  <select id="getAllUsers" resultMap="BaseResultMap">
-  	select 
-    <include refid="Base_Column_List" />
-    from t_user
+  <select id="getAllUsers" resultMap="userMap">
+  	 select  <include refid="Base_Column_List" />,<include refid="role_Column_List"></include>
+    from t_user a inner join role b on a.role_id=b.role_id
+  </select>
+  <select id="getUsersByPage" resultMap="userMap" parameterType="map">
+  	 select  <include refid="Base_Column_List" />,<include refid="role_Column_List"></include>
+    from t_user a inner join role b on a.role_id=b.role_id where 1=1
+		<if test="userName != null and userName != '' " >
+		  and a.user_name = #{userName,jdbcType=VARCHAR}
+		</if>
+		<if test="roleId != null and roleId != '' ">
+			and	a.role_id=#{roleId,jdbcType=INTEGER}
+		</if>
+		<!-- date类型，Null -->
+		<if test="createTime != null">
+		  and	a.create_time like CONCAT('%',#{createTime,jdbcType=DATE},'%')
+		</if>
+  </select>
+  <select id="selectByUserNameAndPwd" parameterType="user" resultMap="userMap">
+  select  <include refid="Base_Column_List" />,<include refid="role_Column_List"></include>
+    from t_user a inner join role b on a.role_id=b.role_id where a.user_name=#{userName,jdbcType=VARCHAR} and a.password=#{password,jdbcType=VARCHAR}
   </select>
 </mapper>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>首页</title>
+<link rel="stylesheet" th:href="@{bootstrap/css/bootstrap.min.css}"  type="text/css"/>
+<link rel="stylesheet" th:href="@{bootstrap/css/bootstrap-theme.min.css}"  type="text/css"/>
+</head>
+<body>
+	<!-- 引入头部信息 在fragments/header页面中的header片段 -->
+	<div th:replace="fragments/header :: header"></div>
+	<h3>用户列表</h3>
+	<div>
+		<table border="1" spellcheck="true" style="">
+			<tr>
+				<td colspan="8" align="right"><a th:href="@{/addUser}">添加用户</a></td>
+			</tr>
+			<tr>
+				<th>No.</th>
+				<th>用户编号</th>
+				<th>用户姓名</th>
+				<th>用户密码</th>
+				<th>用户电话</th>
+				<th>创建时间</th>
+				<th>价格</th>
+				<th>操作</th>
+			</tr>
+			<tr th:if="${#lists.isEmpty(users)}">
+				<td colspan="8">对不起，暂无数据</td>
+			</tr>
+			<tr th:each="user,info : ${users}">
+				<td th:text="${info.count}"></td>
+				<td th:text="${user.userId}"></td>
+				<td th:text="${user.userName}"></td>
+				<td th:text="${user.password}"></td>
+				<td th:text="${user.phone}"></td>
+				<td th:text="${#calendars.format(user.createTime,'yyyy-MM-dd hh:mm:ss')}" ></td>
+				<td><span style="color:red;font-weight: bold;">￥</span><span  th:text="${user.price}"></span></td>
+				<td>
+					<a th:href="@{'/deleteById?userId='+${user.userId}}" onclick="return confirm('确定要删除？');">删除</a>
+					&nbsp;|&nbsp;
+					<a th:href="@{'/getUserById?userId='+${user.userId}}">详情</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+<!-- 引入底部信息 在fragments/footer页面中的footer片段 -->
+	<div th:replace="fragments/footer :: footer"></div>
+<script type="text/javascript" th:src="@{js/jquery-2.1.1.min.js}"></script>
+<script type="text/javascript" th:src="@{bootstrap/js/bootstrap.min.js}"></script>
+<!-- js使用thymeleaf -->
+<script type="text/javascript" th:inline="javascript">
+$(function(){
+	var ctx=[[@{/}]];
+	console.log(ctx);
+});
+</script>
+</body>
+</html>
