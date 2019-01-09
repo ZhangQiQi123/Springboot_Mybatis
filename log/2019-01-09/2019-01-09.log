@@ -1,0 +1,182 @@
+2019-01-09 10:02:20 -Starting Application on DESKTOP-PLKM4IJ with PID 29460 (started by 17612 in D:\ZhangQi\Java\架构\Springboot_Mybatis\Springboot_Mybatis)
+2019-01-09 10:02:20 -The following profiles are active: dev
+2019-01-09 10:02:21 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4eb09116: startup date [Wed Jan 09 10:02:21 CST 2019]; root of context hierarchy
+2019-01-09 10:02:21 -HV000001: Hibernate Validator 5.3.5.Final
+2019-01-09 10:02:23 -Tomcat initialized with port(s): 8080 (http)
+2019-01-09 10:02:23 -Starting service Tomcat
+2019-01-09 10:02:23 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2019-01-09 10:02:23 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-01-09 10:02:23 -Initializing Spring embedded WebApplicationContext
+2019-01-09 10:02:23 -Root WebApplicationContext: initialization completed in 2351 ms
+2019-01-09 10:02:23 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-09 10:02:23 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-09 10:02:23 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-09 10:02:23 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-09 10:02:23 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-01-09 10:02:23 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-09 10:02:23 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-01-09 10:02:23 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-09 10:02:23 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-01-09 10:02:24 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4eb09116: startup date [Wed Jan 09 10:02:21 CST 2019]; root of context hierarchy
+2019-01-09 10:02:24 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleControllor.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-01-09 10:02:24 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleControllor.getRoleById(com.zqq.model.Role)
+2019-01-09 10:02:24 -Mapped "{[/showAllUsers]}" onto public java.lang.String com.zqq.ctrl.UserControllor.addUser(com.zqq.model.User)
+2019-01-09 10:02:24 -Mapped "{[/deleteById]}" onto public java.lang.String com.zqq.ctrl.UserControllor.deleteUserById(com.zqq.model.User,org.springframework.ui.Model)
+2019-01-09 10:02:24 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers(org.springframework.ui.Model)
+2019-01-09 10:02:24 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-01-09 10:02:24 -Mapped "{[/addUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.login(org.springframework.ui.Model)
+2019-01-09 10:02:24 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserControllor.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-01-09 10:02:24 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:02:24 -Mapped "{[/getUserById]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,org.springframework.ui.Model)
+2019-01-09 10:02:24 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userControllor' method 
+public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+to {[/getUserById]}: There is already 'userControllor' bean method
+public java.lang.String com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,org.springframework.ui.Model) mapped.
+2019-01-09 10:02:24 -Stopping service Tomcat
+2019-01-09 10:02:24 -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-01-09 10:02:24 -Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userControllor' method 
+public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+to {[/getUserById]}: There is already 'userControllor' bean method
+public java.lang.String com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,org.springframework.ui.Model) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at com.zqq.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userControllor' method 
+public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+to {[/getUserById]}: There is already 'userControllor' bean method
+public java.lang.String com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,org.springframework.ui.Model) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 19 common frames omitted
+2019-01-09 10:03:59 -Starting Application on DESKTOP-PLKM4IJ with PID 1460 (started by 17612 in D:\ZhangQi\Java\架构\Springboot_Mybatis\Springboot_Mybatis)
+2019-01-09 10:03:59 -The following profiles are active: dev
+2019-01-09 10:03:59 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4eb09116: startup date [Wed Jan 09 10:03:59 CST 2019]; root of context hierarchy
+2019-01-09 10:04:00 -HV000001: Hibernate Validator 5.3.5.Final
+2019-01-09 10:04:01 -Tomcat initialized with port(s): 8080 (http)
+2019-01-09 10:04:01 -Starting service Tomcat
+2019-01-09 10:04:01 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2019-01-09 10:04:01 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-01-09 10:04:01 -Initializing Spring embedded WebApplicationContext
+2019-01-09 10:04:01 -Root WebApplicationContext: initialization completed in 1981 ms
+2019-01-09 10:04:02 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-09 10:04:02 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-09 10:04:02 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-09 10:04:02 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-09 10:04:02 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-01-09 10:04:02 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-09 10:04:02 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-01-09 10:04:02 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-09 10:04:02 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-01-09 10:04:02 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4eb09116: startup date [Wed Jan 09 10:03:59 CST 2019]; root of context hierarchy
+2019-01-09 10:04:02 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleControllor.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-01-09 10:04:02 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleControllor.getRoleById(com.zqq.model.Role)
+2019-01-09 10:04:02 -Mapped "{[/showAllUsers]}" onto public java.lang.String com.zqq.ctrl.UserControllor.addUser(com.zqq.model.User)
+2019-01-09 10:04:02 -Mapped "{[/addUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.login(org.springframework.ui.Model)
+2019-01-09 10:04:02 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-01-09 10:04:02 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers(org.springframework.ui.Model)
+2019-01-09 10:04:02 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserControllor.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-01-09 10:04:02 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:04:02 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:04:02 -Mapped "{[/deleteById]}" onto public java.lang.String com.zqq.ctrl.UserControllor.deleteUserById(com.zqq.model.User,org.springframework.ui.Model)
+2019-01-09 10:04:02 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:04:02 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-09 10:04:02 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:04:02 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-09 10:04:02 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-09 10:04:03 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-09 10:04:03 -LiveReload server is running on port 35729
+2019-01-09 10:04:03 -Registering beans for JMX exposure on startup
+2019-01-09 10:04:03 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-09 10:04:03 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-09 10:04:03 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-09 10:04:03 -Starting ProtocolHandler ["http-nio-8080"]
+2019-01-09 10:04:03 -Using a shared selector for servlet write/read
+2019-01-09 10:04:03 -Tomcat started on port(s): 8080 (http)
+2019-01-09 10:04:03 -Started Application in 4.568 seconds (JVM running for 5.153)
+2019-01-09 10:04:03 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-01-09 10:04:34 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-09 10:04:34 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-09 10:04:34 -FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+2019-01-09 10:05:55 -Starting Application on DESKTOP-PLKM4IJ with PID 24336 (started by 17612 in D:\ZhangQi\Java\架构\Springboot_Mybatis\Springboot_Mybatis)
+2019-01-09 10:05:55 -The following profiles are active: dev
+2019-01-09 10:05:56 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@344509ee: startup date [Wed Jan 09 10:05:56 CST 2019]; root of context hierarchy
+2019-01-09 10:05:56 -HV000001: Hibernate Validator 5.3.5.Final
+2019-01-09 10:05:58 -Tomcat initialized with port(s): 8080 (http)
+2019-01-09 10:05:58 -Starting service Tomcat
+2019-01-09 10:05:58 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2019-01-09 10:05:58 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-01-09 10:05:58 -Initializing Spring embedded WebApplicationContext
+2019-01-09 10:05:58 -Root WebApplicationContext: initialization completed in 2425 ms
+2019-01-09 10:05:58 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-09 10:05:58 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-09 10:05:58 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-09 10:05:58 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-09 10:05:58 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-01-09 10:05:58 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-09 10:05:58 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-01-09 10:05:58 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-09 10:05:58 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-01-09 10:05:59 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@344509ee: startup date [Wed Jan 09 10:05:56 CST 2019]; root of context hierarchy
+2019-01-09 10:06:00 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleControllor.getRoleById(com.zqq.model.Role)
+2019-01-09 10:06:00 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleControllor.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-01-09 10:06:00 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:06:00 -Mapped "{[/showAllUsers]}" onto public java.lang.String com.zqq.ctrl.UserControllor.addUser(com.zqq.model.User)
+2019-01-09 10:06:00 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:06:00 -Mapped "{[/deleteById]}" onto public java.lang.String com.zqq.ctrl.UserControllor.deleteUserById(com.zqq.model.User,org.springframework.ui.Model)
+2019-01-09 10:06:00 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.getAllUsers(org.springframework.ui.Model)
+2019-01-09 10:06:00 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserControllor.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-01-09 10:06:00 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:06:00 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserControllor.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-01-09 10:06:00 -Mapped "{[/addUser]}" onto public java.lang.String com.zqq.ctrl.UserControllor.login(org.springframework.ui.Model)
+2019-01-09 10:06:00 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-09 10:06:00 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-09 10:06:00 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-09 10:06:00 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-09 10:06:00 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-09 10:06:01 -LiveReload server is running on port 35729
+2019-01-09 10:06:01 -Registering beans for JMX exposure on startup
+2019-01-09 10:06:01 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-09 10:06:01 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-09 10:06:01 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-09 10:06:01 -Starting ProtocolHandler ["http-nio-8080"]
+2019-01-09 10:06:01 -Using a shared selector for servlet write/read
+2019-01-09 10:06:01 -Tomcat started on port(s): 8080 (http)
+2019-01-09 10:06:01 -Started Application in 6.117 seconds (JVM running for 6.945)
+2019-01-09 10:06:01 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-01-09 10:06:14 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-09 10:06:14 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-09 10:06:14 -FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2019-01-09 10:06:54 -{dataSource-1} inited
+2019-01-09 10:06:54 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-01-09 10:06:54 -==> Parameters: 
+2019-01-09 10:06:55 -<==      Total: 3
+2019-01-09 10:07:07 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-01-09 10:07:07 -==> Parameters: 
+2019-01-09 10:07:07 -<==      Total: 3

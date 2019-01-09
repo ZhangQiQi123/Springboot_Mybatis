@@ -10,55 +10,26 @@ import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-<<<<<<< HEAD
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-=======
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
->>>>>>> 08dee62ec31037cde87a825a152904bd88559788
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-<<<<<<< HEAD
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import com.github.pagehelper.Page;
-import com.zqq.mapper.UserMapper;
-import com.zqq.model.Role;
 import com.zqq.model.User;
 import com.zqq.service.UserService;
 import com.zqq.util.PageInfo;
 
 @Controller
 public class UserControllor {
-	  public static final Logger log = LoggerFactory.getLogger(UserControllor.class);
-	 
-
-
-	
-=======
-
-import com.zqq.config.JdbcConfig;
-import com.zqq.model.User;
-import com.zqq.service.UserService;
-import com.zqq.test.Application;
-
-@Controller
-public class UserControllor {
 	public static final Logger log=Logger.getLogger(UserControllor.class);
->>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 	@Autowired
 	private UserService userService;
-	@Autowired
-	private UserMapper userMapper;
+
 
 	public void setUserService(UserService userService) {
 		this.userService = userService;
@@ -78,14 +49,8 @@ public class UserControllor {
 		log.info("添加用户页面");
 		return "user/addUser";
 	}
-<<<<<<< HEAD
-	@RequestMapping("/showAllUser")
-	public String addUser(User user){
-		user.setCreateTime(new Date());
-=======
 	@RequestMapping("/showAllUsers")
 	public String addUser(User user){
->>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 		int result=userService.addUser(user);
 		if (result>0) {
 			return "redirect:getAllUser";
@@ -102,17 +67,7 @@ public class UserControllor {
 			return "500";
 		}
 	}
-<<<<<<< HEAD
-//	@RequestMapping("/getUserById")
-//	public String getUserById(User user,Model model){
-//		user=userService.getUserById(user.getUserId());
-//		if (user!=null) {
-//			model.addAttribute("user",user);
-//			return "user/userInfo";
-//		}else{
-//			return "500";
-//		}
-//	}
+
 	@ResponseBody
 	@RequestMapping("/login")
 	public Map<String, Object> login(User user,ModelMap model,HttpServletResponse response,HttpSession session){
@@ -205,19 +160,6 @@ public class UserControllor {
 		Page<User> users = userService.findByPage(pageNo, pageSize, userName, roleid, date);
 		// 需要把Page包装成PageInfo对象才能序列化。该插件也默认实现了一个PageInfo
 		PageInfo<User> pageInfo = new PageInfo<>(users);
-		
-		Map<String, Object> map=new HashMap<String,Object>();
 		return pageInfo;
-=======
-	@RequestMapping("/getUserById")
-	public String getUserById(User user,Model model){
-		user=userService.getUserById(user.getUserId());
-		if (user!=null) {
-			model.addAttribute("user",user);
-			return "user/userInfo";
-		}else{
-			return "500";
-		}
->>>>>>> 08dee62ec31037cde87a825a152904bd88559788
 	}
 }

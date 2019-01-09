@@ -2,7 +2,6 @@ package com.zqq.service;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 import com.github.pagehelper.Page;
 import com.zqq.model.User;
@@ -17,8 +16,6 @@ public interface UserService {
      * @return
      */
     List<User> findAllUsers();
-    
-<<<<<<< HEAD
     /**
      * 分页查询
      * @param pageNo 当前页码
@@ -36,9 +33,5 @@ public interface UserService {
     User getUserByUserNameAndPwd(User user);
     
     int updateUserById(User user);
-=======
-    User getUserById(Integer userId);
-    
-    int deleteUserById(Integer userId);
->>>>>>> 08dee62ec31037cde87a825a152904bd88559788
+
 }
