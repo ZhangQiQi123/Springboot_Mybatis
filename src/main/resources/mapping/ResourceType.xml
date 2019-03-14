@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqq.mapper.ResourceTypeMapper">
+	<resultMap type="resourceType" id="resourceTypeMap">
+		<id property="resourceTypeId" column="resource_type_id" jdbcType="INTEGER" javaType="INT" />
+		<result property="resourceTypeName" column="resource_type_name" jdbcType="VARCHAR" javaType="STRING"/>
+	</resultMap>
+	<sql id="resourceTypeColumn">
+		resource_type_id,resource_type_name
+	</sql>
+	<select id="selectResourceType" resultMap="resourceTypeMap">
+		select <include refid="resourceTypeColumn"/> from resource_type
+	</select>
+</mapper>

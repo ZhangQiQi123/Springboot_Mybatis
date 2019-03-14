@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
@@ -20,13 +21,14 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.github.pagehelper.Page;
+import com.zqq.model.Role;
 import com.zqq.model.User;
 import com.zqq.service.UserService;
 import com.zqq.util.PageInfo;
 
 @Controller
-public class UserControllor {
-	public static final Logger log=Logger.getLogger(UserControllor.class);
+public class UserController {
+	public static final Logger log=Logger.getLogger(UserController.class);
 	@Autowired
 	private UserService userService;
 
@@ -43,29 +45,42 @@ public class UserControllor {
 		log.info("访问第一个页面");
 		return "user/showAllUsers";
 	}
+	
+	
 	@RequestMapping("/addUser")
-	public String login(Model model){
-		
-		log.info("添加用户页面");
-		return "user/addUser";
-	}
-	@RequestMapping("/showAllUsers")
-	public String addUser(User user){
+	@ResponseBody
+	public Map<String, Object> addUser(User user,Role role, HttpServletResponse response){
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		Map<String, Object> map=new HashMap<>();
+		Date createTime=new Date();
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		user.setCreateTime(createTime);
+		user.setUpdateTime(createTime);
+		user.setRole(role);
 		int result=userService.addUser(user);
+		String msg;
 		if (result>0) {
-			return "redirect:getAllUser";
+			msg="success";
 		}else{
-			return "500";
+			msg="error";
 		}
+		map.put("msg", msg);
+		return map;
 	}
-	@RequestMapping("/deleteById")
-	public String deleteUserById(User user,Model model){
-		int result=userService.deleteUserById(user.getUserId());
+	@RequestMapping("/deleteUserById")
+	@ResponseBody
+	public Map<String, Object> deleteUserById(int userId,HttpServletResponse response){
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		Map<String, Object> map=new HashMap<>();
+		String msg;
+		int result=userService.deleteUserById(userId);
 		if (result>0) {
-			return "redirect:getAllUser";
+			msg="success";
 		}else{
-			return "500";
+			msg="error";
 		}
+		map.put("msg", msg);
+		return map;
 	}
 
 	@ResponseBody
@@ -117,21 +132,15 @@ public class UserControllor {
 		map.put("result", user);
 		return map;
 	}
-	@RequestMapping("/updateUserPwdById")
+	@RequestMapping("/updateUserInfoById")
 	@ResponseBody
-	public Map<String, Object> updateUserPwdById(User user,HttpServletResponse response){
+	public Map<String, Object> updateUserInfoById(int userId,String userName,int roleId,String phone,HttpServletResponse response) throws Exception{
 		response.setHeader("Access-Control-Allow-Origin", "*");
 		Map<String, Object> map=new HashMap<String,Object>();
-		
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-		try {
-			user.setUpdateTime(sdf.parse(sdf.format(new Date())));
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Date updateTime=sdf.parse(sdf.format(new Date()));
 		String msg;
-		int result=userService.updateUserById(user);
+		int result=userService.updateUserById(userId,userName,roleId,phone,updateTime);
 		if (result>0) {
 			msg="success";
 		}else{
@@ -140,6 +149,35 @@ public class UserControllor {
 		map.put("msg", msg);
 		return map;
 	}
+	@RequestMapping("/updateUserPwdById")
+	@ResponseBody
+	public Map<String, Object> updateUserPwdById(User user,HttpServletResponse response) throws Exception{
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		Map<String, Object> map=new HashMap<String,Object>();
+		Date updateTime=new Date();
+		user.setUpdateTime(updateTime);
+		String msg;
+		int result=userService.updateUserPwd(user);
+		if (result>0) {
+			msg="success";
+		}else{
+			msg="faile";
+		}
+		map.put("msg", msg);
+		return map;
+	}
+	/**
+	 * 
+	 * @param response
+	 * @param pageNo 当前页
+	 * @param pageSize 每页显示记录数
+	 * @param userName
+	 * @param roleId
+	 * @param createTime
+	 * @return
+	 * @throws Exception
+	 * @throws ParseException
+	 */
 	@RequestMapping("/getAllUserByPage")
 	@ResponseBody
 	public Object getAllUserByPage(HttpServletResponse response,Integer pageNo,Integer pageSize,String userName,String roleId,String createTime) throws Exception, ParseException{
@@ -162,4 +200,21 @@ public class UserControllor {
 		PageInfo<User> pageInfo = new PageInfo<>(users);
 		return pageInfo;
 	}
+	@RequestMapping("/getUserByUserName")
+	@ResponseBody
+	public Map<String, Object> getUserByUserName(String userName,HttpServletResponse response) {
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		Map<String, Object> map=new HashMap<>();
+		User user=userService.checkUserName(userName);
+		String msg="";
+		if (user!=null) {
+			msg="success";
+		}else{
+			msg="error";
+		}
+		map.put("msg", msg);
+		map.put("user", user);
+		return map;
+	}
+	
 }

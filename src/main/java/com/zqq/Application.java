@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableAutoConfiguration
 @MapperScan("com.zqq.mapper")
-@ComponentScan(basePackages={"com.zqq.ctrl","com.zqq.service"})
+//@ComponentScan(basePackages={"com.zqq.ctrl","com.zqq.service"})
 @ServletComponentScan
 public class Application {
 	public static final Logger log=Logger.getLogger(Application.class);

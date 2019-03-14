@@ -7,13 +7,16 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.zqq.mapper.UserMapper;
 import com.zqq.model.User;
 import com.zqq.service.UserService;
+
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
 	@Autowired
@@ -53,7 +56,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public int deleteUserById(Integer userId) {
-		return userMapper.deleteByPrimaryKey(userId);
+		return userMapper.deleteUserById(userId);
 	}
 
 	@Override
@@ -62,8 +65,14 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public int updateUserById(User user) {
-		return userMapper.updateByPrimaryKeySelective(user);
+	public int updateUserById(int userId,String userName,int roleId,String phone,Date updateTime) {
+		Map<String, Object> params=new HashMap<>();
+		params.put("userId", userId);
+		params.put("userName", userName);
+		params.put("roleId", roleId);
+		params.put("phone", phone);
+		params.put("updateTime", updateTime);
+		return userMapper.updateByPrimaryKey(params);
 	}
 
 	@Override
@@ -74,6 +83,16 @@ public class UserServiceImpl implements UserService {
 		params.put("roleId", roleId);
 		params.put("createTime", createTime);
         return userMapper.getUsersByPage(params);
+	}
+
+	@Override
+	public User checkUserName(String userName) {
+		return userMapper.getUserByUserName(userName);
+	}
+
+	@Override
+	public int updateUserPwd(User user) {
+		return userMapper.updateUserPwd(user);
 	}
 
 }

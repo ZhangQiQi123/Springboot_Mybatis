@@ -32,6 +32,17 @@ public interface UserService {
     
     User getUserByUserNameAndPwd(User user);
     
-    int updateUserById(User user);
-
+    int updateUserById(int userId,String userName,int roleId,String phone,Date updateTime);
+    /**
+     * 检查用户名是否存在
+     * @param userName
+     * @return
+     */
+    User checkUserName(String userName);
+    /**
+     * 修改用户密码
+     * @param user
+     * @return
+     */
+    int updateUserPwd(User user);
 }

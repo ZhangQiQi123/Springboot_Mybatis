@@ -18,17 +18,25 @@ public interface UserMapper {
 
     int updateByPrimaryKeySelective(User record);
 
-    int updateByPrimaryKey(User record);
+    int updateByPrimaryKey(Map<String, Object> params);
     /**
      * 获取所有用户
      * @return
      */
     List<User> getAllUsers();
     /**
-     * 分页获取用户
+     * 分页获取用户信息
      * @return
      */
     Page<User> getUsersByPage(Map<String, Object> params);
     
     User selectByUserNameAndPwd(User user);
+    
+    int deleteUserById(Integer userId);
+    
+    User getUserByUserName(String userName);
+    
+    int updateUserPwd(User user);
+    
+    
 }

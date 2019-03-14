@@ -31,13 +31,13 @@ public class User {
 	@Column(name="phone")
     private String phone;
 	@Column(name="create_time")
-    @DateTimeFormat(pattern="yyyy-MM-dd hh:mm:ss")
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+5:30")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date createTime;
 
 	@Column(name="update_time")
-    @DateTimeFormat(pattern="yyyy-MM-dd hh:mm:ss")
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+5:30")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updateTime;	
 	@Column(name="role_id")
 	private Role role;

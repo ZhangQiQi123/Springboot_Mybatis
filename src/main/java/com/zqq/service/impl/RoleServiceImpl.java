@@ -1,10 +1,15 @@
 package com.zqq.service.impl;
 
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.zqq.mapper.RoleMapper;
 import com.zqq.model.Role;
 import com.zqq.service.RoleService;
@@ -46,6 +51,20 @@ public class RoleServiceImpl implements RoleService {
 	@Override
 	public Role getRoleByUserNameAndPwd(Role role) {
 		return roleMapper.selectByUserNameAndPwd(role);
+	}
+
+	@Override
+	public Page<Role> getRolesByPage(int pageNo, int pageSize, String roleName, Date createTime) {
+		PageHelper.startPage(pageNo, pageSize);
+		Map<String, Object> params=new HashMap<>();
+		params.put("roleName", roleName);
+		params.put("createTime", createTime);
+		return roleMapper.getRolesByPage(params);
+	}
+	
+	@Override
+	public Role getRoleByRoleName(String roleName) {
+		return roleMapper.getRoleByRoleName(roleName);
 	}
 
 }

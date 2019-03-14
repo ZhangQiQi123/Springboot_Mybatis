@@ -25,13 +25,16 @@ public class Role {
 	@Column(name="role_name")
 	private String roleName;
 	@Column(name="create_time")
-	@DateTimeFormat(pattern="yyyy-MM-dd hh:mm:ss")
-	@JsonFormat(pattern="yyyy-MM-dd hh:mm:ss", timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	private Date createTime;
 	@Column(name="update_time")
-	@DateTimeFormat(pattern="yyyy-MM-dd hh:mm:ss")
-	@JsonFormat(pattern="yyyy-MM-dd hh:mm:ss", timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	private Date updateTime;
+	@Column(name="remark")
+	private String remark;
+	
 	public int getRoleId() {
 		return roleId;
 	}
@@ -56,12 +59,21 @@ public class Role {
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
-	public Role(int roleId, String roleName, Date createTime, Date updateTime) {
+	
+	
+	public String getRemark() {
+		return remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public Role(int roleId, String roleName, Date createTime, Date updateTime,String remark) {
 		super();
 		this.roleId = roleId;
 		this.roleName = roleName;
 		this.createTime = createTime;
 		this.updateTime = updateTime;
+		this.remark=remark;
 	}
 	public Role() {
 		super();

@@ -27,10 +27,10 @@
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="user" >
-    insert into t_user (user_name, password, 
-      phone,create_time,price)
-    values (#{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{price,jdbcType=DECIMAL})
+    insert into t_user (user_name, password, role_id,
+      phone,create_time,update_time,price)
+    values (#{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{role.roleId,jdbcType=INTEGER},
+      #{phone,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},#{price,jdbcType=DECIMAL})
   </insert>
   <insert id="insertSelective" parameterType="user" >
     insert into t_user
@@ -63,7 +63,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="user" >
+  <update id="updateByPrimaryKeySelective" parameterType="map" >
     update t_user
     <set >
       <if test="userName != null and userName != '' " >
@@ -75,11 +75,9 @@
       <if test="phone != null and phone != '' " >
         phone = #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="role != null">
-      	<if test="role.roleId != null and role.roleId != '' ">
-      		role_id =#(roleId,jdbcType=INTEGER),
-      	</if>
-      </if>
+	  <if test="roleId != null and roleId != '' ">
+		role_id =#(roleId,jdbcType=INTEGER),
+	  </if>
       <if test="updateTime != null" >
         update_time = #{updateTime,jdbcType=TIMESTAMP},
       </if>
@@ -88,9 +86,23 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="user" >
     update t_user
-    set user_name = #{userName,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
-      phone = #{phone,jdbcType=VARCHAR}
+    <set >
+      <if test="userName != null and userName != '' " >
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null and password != '' " >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null and phone != '' " >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+	  <if test="roleId != null and roleId != '' ">
+		role_id = #{roleId,jdbcType=INTEGER},
+	  </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
   <select id="getAllUsers" resultMap="userMap">
@@ -101,7 +113,7 @@
   	 select  <include refid="Base_Column_List" />,<include refid="role_Column_List"></include>
     from t_user a inner join role b on a.role_id=b.role_id where 1=1
 		<if test="userName != null and userName != '' " >
-		  and a.user_name = #{userName,jdbcType=VARCHAR}
+		  and a.user_name like CONCAT('%',#{userName,jdbcType=VARCHAR},'%')
 		</if>
 		<if test="roleId != null and roleId != '' ">
 			and	a.role_id=#{roleId,jdbcType=INTEGER}
@@ -115,4 +127,13 @@
   select  <include refid="Base_Column_List" />,<include refid="role_Column_List"></include>
     from t_user a inner join role b on a.role_id=b.role_id where a.user_name=#{userName,jdbcType=VARCHAR} and a.password=#{password,jdbcType=VARCHAR}
   </select>
+  <delete id="deleteUserById" parameterType="INTEGER">
+  	delete from t_user where user_id=#{0}
+  </delete>
+  <select id="getUserByUserName" resultMap="userMap" parameterType="String">
+  	select <include refid="Base_Column_List" /> from t_user a where user_name=#{0}
+  </select>
+  <update id="updateUserPwd" parameterType="user">
+  	update t_user set password=#{password,jdbcType=VARCHAR} , update_time = #{updateTime,jdbcType=TIMESTAMP} where user_id=#{userId,jdbcType=INTEGER}
+  </update>
 </mapper>

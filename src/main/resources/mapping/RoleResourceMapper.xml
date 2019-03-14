@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqq.mapper.RoleResourceMapper">
+	<resultMap type="roleResource" id="roleResourceMap">
+		<id property="roleResourceId" column="role_resource_id" jdbcType="INTEGER" javaType="INT"/>
+		<result property="roleId" column="role_id" jdbcType="INTEGER" javaType="INT"/>
+		<result property="resourceId" column="resource_id" jdbcType="VARCHAR" javaType="STRING"/>
+	</resultMap>
+	<sql id="roleResourceColumns">
+		role_resource_id,role_id,resource_id
+	</sql>
+	<select id="selectRoleResourcesByRoleId" resultMap="roleResourceMap" parameterType="INT">
+		select <include refid="roleResourceColumns"/> from role_resource where role_id=#{0}
+	</select>
+	<delete id="deleteRoleResourceByRoleId" parameterType="INT">
+		delete from role_resource where role_id=#{0}
+	</delete>
+	<insert id="insertRoleResource" parameterType="roleResource">
+		insert into role_resource (role_id,resource_id) values(#{roleId},#{resourceId})
+	</insert>
+</mapper>

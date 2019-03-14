@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqq.mapper.ResourceMapper">
+	<resultMap type="resource" id="resourceMap">
+		<id property="resourceId" column="resource_id" javaType="STRING" jdbcType="VARCHAR"/>
+		<result property="resourceName" column="resource_name" javaType="STRING" jdbcType="VARCHAR"/>
+		<result property="resourceTypeId" column="resource_type_id" javaType="INT" jdbcType="VARCHAR"/>
+		<result property="parmaterId" column="parmater_id" javaType="STRING" jdbcType="VARCHAR"/>
+		<result property="resourceUrl" column="resource_url" javaType="STRING" jdbcType="VARCHAR"/>
+		<result property="icons" column="icons" javaType="STRING" jdbcType="VARCHAR"/>
+		<result property="createTime" column="create_time" javaType="DATE" jdbcType="TIMESTAMP"/>
+		<result property="updateTime" column="update_time" javaType="DATE" jdbcType="TIMESTAMP"/>
+		<result property="remark" column="remark" javaType="STRING" jdbcType="VARCHAR"/>
+	</resultMap>
+	<sql id="resourceColumn">
+		resource_id,resource_name,resource_type_id,parmater_id,resource_url,icons,create_time,update_time,remark
+	</sql>
+	<select id="selectAllResources" resultMap="resourceMap">
+		select <include refid="resourceColumn"/> from resource
+	</select>
+	<select id="selectResourceByType" resultMap="resourceMap" parameterType="INT">
+		select <include refid="resourceColumn"/> from resource where resource_type_id=#{0}
+	</select>
+	<select id="selectResourceByResourceId" resultMap="resourceMap" parameterType="STRING">
+		select <include refid="resourceColumn"/> from resource where resource_id like concat("%",#{resourceId},"%")
+	</select>
+	<select id="selectAllResourceByPage" resultMap="resourceMap" parameterType="map">
+		select <include refid="resourceColumn"/> from resource where 1=1
+		<if test="resourceName != null and resourceName != ''">and resource_name like concat("%",#{resourceName},"%") </if>
+		<if test="resourceUrl != null and resourceUrl != ''">and resource_url like concat("%",#{resourceUrl},"%")  </if>
+		<if test="createTime != null">and create_time like concat("%",#{createTime,jdbcType=DATE},"%") </if>
+	</select>
+	<select id="selectResourceByParameterId" resultMap="resourceMap">
+		select resource_id,resource_name from resource where resource_type_id=1
+	</select>
+	<select id="selectResourceByResourceName" parameterType="STRING" resultMap="resourceMap">
+		select <include refid="resourceColumn"/> from resource where resource_name=#{resourceName}
+	</select>
+</mapper>

@@ -5,7 +5,8 @@
 		<id property="roleId" column="role_id" jdbcType="INTEGER"/>
 		<result property="roleName" column="role_name" jdbcType="VARCHAR"/>
 		<result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
-		<result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>		
+		<result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>	
+		<result property="remark" column="remark" jdbcType="VARCHAR"/>	
 	</resultMap>
 	<sql id="role_column_list">
 		role_id,role_name,create_time,update_time
@@ -19,4 +20,18 @@
 		select <include refid="role_column_list"/>
 		from role where role_id=#{0}
 	</select>
+	<select id="getRolesByPage" resultMap="roleMap" parameterType="map">
+		select role_id,role_name,create_time,update_time,remark from role where 1=1
+		<if test="roleName != null and roleName != '' "> and role_name like CONCAT('%',#{roleName,jdbcType=VARCHAR},'%') </if>
+		<if test="createTime != null"> and create_time like CONCAT('%',#{createTime,jdbcType=DATE},'%')</if>
+	</select>
+	<select id="getRoleByRoleName" resultMap="roleMap" parameterType="STRING">
+		select role_id,role_name from role where role_name=#{roleName,jdbcType=VARCHAR}
+	</select>
+	<insert id="insert"  parameterType="role">
+		insert into role(role_name,create_time,update_time,remark) values(#{roleName,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},#{remark,jdbcType=VARCHAR})
+	</insert>
+	<delete id="deleteByPrimaryKey" parameterType="INT">
+		delete from role where role_id=#{0}
+	</delete>
 </mapper>

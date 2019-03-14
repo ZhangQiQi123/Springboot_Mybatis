@@ -5,6 +5,12 @@ import java.util.Collection;
 import java.util.List;
 
 import com.github.pagehelper.Page;
+/**
+ * pageHelper 分页工具
+ * @author 17612
+ *
+ * @param <T>
+ */
 @SuppressWarnings({"rawtypes", "unchecked"})
 public class PageInfo<T> implements Serializable {
 
