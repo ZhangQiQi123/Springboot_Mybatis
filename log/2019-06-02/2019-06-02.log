@@ -1,0 +1,284 @@
+2019-06-02 13:54:52 -Starting Application on DESKTOP-PLKM4IJ with PID 32968 (D:\topcheer\topcheer\Springboot_Mybatis\target\classes started by 17612 in D:\topcheer\topcheer\Springboot_Mybatis)
+2019-06-02 13:54:52 -The following profiles are active: dev
+2019-06-02 13:54:52 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7adf0a33: startup date [Sun Jun 02 13:54:52 CST 2019]; root of context hierarchy
+2019-06-02 13:54:52 -HV000001: Hibernate Validator 5.3.5.Final
+2019-06-02 13:54:53 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-02 13:54:54 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-02 13:54:54 -Tomcat initialized with port(s): 8080 (http)
+2019-06-02 13:54:54 -Starting service Tomcat
+2019-06-02 13:54:54 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2019-06-02 13:54:55 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-06-02 13:54:55 -Initializing Spring embedded WebApplicationContext
+2019-06-02 13:54:55 -Root WebApplicationContext: initialization completed in 2683 ms
+2019-06-02 13:54:55 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-02 13:54:55 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-02 13:54:55 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-02 13:54:55 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-02 13:54:55 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-06-02 13:54:55 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-06-02 13:54:55 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-06-02 13:54:55 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-02 13:54:55 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-06-02 13:54:56 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7adf0a33: startup date [Sun Jun 02 13:54:52 CST 2019]; root of context hierarchy
+2019-06-02 13:54:56 -Mapped "{[/getResourceByResourceName]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByResourceName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getResourceByPage]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByPage(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.text.ParseException
+2019-06-02 13:54:56 -Mapped "{[/getResourceByParamater]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByParamater(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getAllResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceController.getAllResource(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getAllResourceType]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceTypeController.getAllResourceType(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getRoleByRoleName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleByRoleName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/addRole]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.addRole(com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getRolesByPages]}" onto public java.lang.Object com.zqq.ctrl.RoleController.getRolesByPages(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String) throws java.text.ParseException
+2019-06-02 13:54:56 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/deleteRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.deleteRoleById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleById(com.zqq.model.Role)
+2019-06-02 13:54:56 -Mapped "{[/getRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.getRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/deleteRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.deleteRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/addRoleResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.addRoleResource(int,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getUserByUserName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserByUserName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 13:54:56 -Mapped "{[/updateUserInfoById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserInfoById(int,java.lang.String,int,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 13:54:56 -Mapped "{[/addUser]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.addUser(com.zqq.model.User,com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/deleteUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.deleteUserById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserController.getAllUsers(org.springframework.ui.Model)
+2019-06-02 13:54:56 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserController.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-06-02 13:54:56 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-06-02 13:54:56 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/sendMail]}" onto public java.lang.String com.zqq.ctrl.util.SendEmailCongroller.sendEmail()
+2019-06-02 13:54:56 -Mapped "{[/sendValidateCode]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.util.SendPhoneValidateCode.sendValidateCode(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-02 13:54:56 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:54:56 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 13:54:56 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 13:54:56 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 13:54:58 -LiveReload server is running on port 35729
+2019-06-02 13:54:58 -Registering beans for JMX exposure on startup
+2019-06-02 13:54:58 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-02 13:54:58 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-06-02 13:54:58 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-02 13:54:58 -Starting ProtocolHandler ["http-nio-8080"]
+2019-06-02 13:54:58 -Using a shared selector for servlet write/read
+2019-06-02 13:54:58 -Tomcat started on port(s): 8080 (http)
+2019-06-02 13:54:58 -Started Application in 6.513 seconds (JVM running for 7.524)
+2019-06-02 13:54:58 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-06-02 13:57:04 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-02 13:57:04 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-02 13:57:04 -FrameworkServlet 'dispatcherServlet': initialization completed in 79 ms
+2019-06-02 13:57:45 -{dataSource-1} inited
+2019-06-02 13:57:45 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-06-02 13:57:45 -==> Parameters: 
+2019-06-02 13:57:45 -<==      Total: 4
+2019-06-02 13:58:51 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7adf0a33: startup date [Sun Jun 02 13:54:52 CST 2019]; root of context hierarchy
+2019-06-02 13:58:51 -Unregistering JMX-exposed beans on shutdown
+2019-06-02 13:58:51 -Unregistering JMX-exposed beans
+2019-06-02 13:58:51 -{dataSource-1} closed
+2019-06-02 13:58:52 -Starting Application on DESKTOP-PLKM4IJ with PID 32968 (D:\topcheer\topcheer\Springboot_Mybatis\target\classes started by 17612 in D:\topcheer\topcheer\Springboot_Mybatis)
+2019-06-02 13:58:52 -The following profiles are active: dev
+2019-06-02 13:58:52 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@753902bf: startup date [Sun Jun 02 13:58:52 CST 2019]; root of context hierarchy
+2019-06-02 13:58:52 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-02 13:58:52 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-02 13:58:53 -Tomcat initialized with port(s): 80 (http)
+2019-06-02 13:58:53 -Starting service Tomcat
+2019-06-02 13:58:53 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2019-06-02 13:58:53 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-06-02 13:58:53 -Initializing Spring embedded WebApplicationContext
+2019-06-02 13:58:53 -Root WebApplicationContext: initialization completed in 1094 ms
+2019-06-02 13:58:53 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-02 13:58:53 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-02 13:58:53 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-02 13:58:53 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-02 13:58:53 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-06-02 13:58:53 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-06-02 13:58:53 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-06-02 13:58:53 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-02 13:58:53 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-06-02 13:58:53 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@753902bf: startup date [Sun Jun 02 13:58:52 CST 2019]; root of context hierarchy
+2019-06-02 13:58:53 -Mapped "{[/getResourceByResourceName]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByResourceName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getResourceByPage]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByPage(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.text.ParseException
+2019-06-02 13:58:53 -Mapped "{[/getResourceByParamater]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByParamater(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getAllResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceController.getAllResource(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getAllResourceType]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceTypeController.getAllResourceType(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getRoleByRoleName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleByRoleName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/addRole]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.addRole(com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getRolesByPages]}" onto public java.lang.Object com.zqq.ctrl.RoleController.getRolesByPages(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String) throws java.text.ParseException
+2019-06-02 13:58:53 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/deleteRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.deleteRoleById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleById(com.zqq.model.Role)
+2019-06-02 13:58:53 -Mapped "{[/getRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.getRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/deleteRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.deleteRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/addRoleResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.addRoleResource(int,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getUserByUserName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserByUserName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 13:58:53 -Mapped "{[/updateUserInfoById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserInfoById(int,java.lang.String,int,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 13:58:53 -Mapped "{[/addUser]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.addUser(com.zqq.model.User,com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/deleteUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.deleteUserById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserController.getAllUsers(org.springframework.ui.Model)
+2019-06-02 13:58:53 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserController.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-06-02 13:58:53 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-06-02 13:58:53 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/sendMail]}" onto public java.lang.String com.zqq.ctrl.util.SendEmailCongroller.sendEmail()
+2019-06-02 13:58:53 -Mapped "{[/sendValidateCode]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.util.SendPhoneValidateCode.sendValidateCode(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-02 13:58:53 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-02 13:58:53 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 13:58:53 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 13:58:53 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 13:58:53 -LiveReload server is running on port 35729
+2019-06-02 13:58:53 -Registering beans for JMX exposure on startup
+2019-06-02 13:58:53 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-02 13:58:53 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-06-02 13:58:53 -Initializing ProtocolHandler ["http-nio-80"]
+2019-06-02 13:58:53 -Starting ProtocolHandler ["http-nio-80"]
+2019-06-02 13:58:53 -Using a shared selector for servlet write/read
+2019-06-02 13:58:54 -Tomcat started on port(s): 80 (http)
+2019-06-02 13:58:54 -Started Application in 1.949 seconds (JVM running for 243.314)
+2019-06-02 13:58:54 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-06-02 13:59:02 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-02 13:59:02 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-02 13:59:02 -FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2019-06-02 13:59:02 -{dataSource-2} inited
+2019-06-02 13:59:02 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-06-02 13:59:02 -==> Parameters: 
+2019-06-02 13:59:02 -<==      Total: 4
+2019-06-02 14:04:57 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@753902bf: startup date [Sun Jun 02 13:58:52 CST 2019]; root of context hierarchy
+2019-06-02 14:04:57 -Unregistering JMX-exposed beans on shutdown
+2019-06-02 14:04:57 -Unregistering JMX-exposed beans
+2019-06-02 14:04:57 -{dataSource-2} closed
+2019-06-02 14:04:57 -Starting Application on DESKTOP-PLKM4IJ with PID 32968 (D:\topcheer\topcheer\Springboot_Mybatis\target\classes started by 17612 in D:\topcheer\topcheer\Springboot_Mybatis)
+2019-06-02 14:04:57 -The following profiles are active: dev
+2019-06-02 14:04:57 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@539c3672: startup date [Sun Jun 02 14:04:57 CST 2019]; root of context hierarchy
+2019-06-02 14:04:58 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-02 14:04:58 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-02 14:04:58 -Tomcat initialized with port(s): 80 (http)
+2019-06-02 14:04:58 -Starting service Tomcat
+2019-06-02 14:04:58 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2019-06-02 14:04:58 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-06-02 14:04:58 -Initializing Spring embedded WebApplicationContext
+2019-06-02 14:04:58 -Root WebApplicationContext: initialization completed in 952 ms
+2019-06-02 14:04:58 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-02 14:04:58 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-02 14:04:58 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-02 14:04:58 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-02 14:04:58 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-06-02 14:04:58 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-06-02 14:04:58 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-06-02 14:04:58 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-02 14:04:58 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-06-02 14:04:59 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@539c3672: startup date [Sun Jun 02 14:04:57 CST 2019]; root of context hierarchy
+2019-06-02 14:04:59 -Mapped "{[/getResourceByResourceName]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByResourceName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getResourceByPage]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByPage(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.text.ParseException
+2019-06-02 14:04:59 -Mapped "{[/getResourceByParamater]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByParamater(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getAllResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceController.getAllResource(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getAllResourceType]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceTypeController.getAllResourceType(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getRoleByRoleName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleByRoleName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/addRole]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.addRole(com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getRolesByPages]}" onto public java.lang.Object com.zqq.ctrl.RoleController.getRolesByPages(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String) throws java.text.ParseException
+2019-06-02 14:04:59 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/deleteRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.deleteRoleById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleById(com.zqq.model.Role)
+2019-06-02 14:04:59 -Mapped "{[/getRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.getRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/deleteRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.deleteRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/addRoleResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.addRoleResource(int,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getUserByUserName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserByUserName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 14:04:59 -Mapped "{[/updateUserInfoById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserInfoById(int,java.lang.String,int,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 14:04:59 -Mapped "{[/addUser]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.addUser(com.zqq.model.User,com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/deleteUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.deleteUserById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserController.getAllUsers(org.springframework.ui.Model)
+2019-06-02 14:04:59 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserController.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-06-02 14:04:59 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-06-02 14:04:59 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/sendMail]}" onto public java.lang.String com.zqq.ctrl.util.SendEmailCongroller.sendEmail()
+2019-06-02 14:04:59 -Mapped "{[/sendValidateCode]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.util.SendPhoneValidateCode.sendValidateCode(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-02 14:04:59 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:04:59 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 14:04:59 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 14:04:59 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 14:04:59 -LiveReload server is running on port 35729
+2019-06-02 14:04:59 -Registering beans for JMX exposure on startup
+2019-06-02 14:04:59 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-02 14:04:59 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-06-02 14:04:59 -Initializing ProtocolHandler ["http-nio-80"]
+2019-06-02 14:04:59 -Starting ProtocolHandler ["http-nio-80"]
+2019-06-02 14:04:59 -Using a shared selector for servlet write/read
+2019-06-02 14:04:59 -Tomcat started on port(s): 80 (http)
+2019-06-02 14:04:59 -Started Application in 1.748 seconds (JVM running for 608.801)
+2019-06-02 14:04:59 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-06-02 14:13:59 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-02 14:13:59 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-02 14:13:59 -FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2019-06-02 14:30:15 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@539c3672: startup date [Sun Jun 02 14:04:57 CST 2019]; root of context hierarchy
+2019-06-02 14:30:15 -Unregistering JMX-exposed beans on shutdown
+2019-06-02 14:30:15 -Unregistering JMX-exposed beans
+2019-06-02 14:30:16 -Starting Application on DESKTOP-PLKM4IJ with PID 32968 (D:\topcheer\topcheer\Springboot_Mybatis\target\classes started by 17612 in D:\topcheer\topcheer\Springboot_Mybatis)
+2019-06-02 14:30:16 -The following profiles are active: dev
+2019-06-02 14:30:16 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40d80033: startup date [Sun Jun 02 14:30:16 CST 2019]; root of context hierarchy
+2019-06-02 14:30:16 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-02 14:30:16 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-02 14:30:16 -Tomcat initialized with port(s): 80 (http)
+2019-06-02 14:30:16 -Starting service Tomcat
+2019-06-02 14:30:16 -Starting Servlet Engine: Apache Tomcat/8.0.36
+2019-06-02 14:30:17 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-06-02 14:30:17 -Initializing Spring embedded WebApplicationContext
+2019-06-02 14:30:17 -Root WebApplicationContext: initialization completed in 996 ms
+2019-06-02 14:30:17 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-02 14:30:17 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-02 14:30:17 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-02 14:30:17 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-02 14:30:17 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-06-02 14:30:17 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-06-02 14:30:17 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-06-02 14:30:17 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-02 14:30:17 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-06-02 14:30:17 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40d80033: startup date [Sun Jun 02 14:30:16 CST 2019]; root of context hierarchy
+2019-06-02 14:30:17 -Mapped "{[/getResourceByResourceName]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByResourceName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getResourceByPage]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByPage(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.text.ParseException
+2019-06-02 14:30:17 -Mapped "{[/getResourceByParamater]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByParamater(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getAllResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceController.getAllResource(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getAllResourceType]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceTypeController.getAllResourceType(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getRoleByRoleName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleByRoleName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/addRole]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.addRole(com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getRolesByPages]}" onto public java.lang.Object com.zqq.ctrl.RoleController.getRolesByPages(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String) throws java.text.ParseException
+2019-06-02 14:30:17 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/deleteRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.deleteRoleById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleById(com.zqq.model.Role)
+2019-06-02 14:30:17 -Mapped "{[/getRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.getRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/deleteRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.deleteRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/addRoleResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.addRoleResource(int,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getUserByUserName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserByUserName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 14:30:17 -Mapped "{[/updateUserInfoById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserInfoById(int,java.lang.String,int,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-02 14:30:17 -Mapped "{[/addUser]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.addUser(com.zqq.model.User,com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/deleteUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.deleteUserById(int,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserController.getAllUsers(org.springframework.ui.Model)
+2019-06-02 14:30:17 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserController.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-06-02 14:30:17 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-06-02 14:30:17 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/sendMail]}" onto public java.lang.String com.zqq.ctrl.util.SendEmailCongroller.sendEmail()
+2019-06-02 14:30:17 -Mapped "{[/sendValidateCode]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.util.SendPhoneValidateCode.sendValidateCode(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-02 14:30:17 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-02 14:30:17 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 14:30:17 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 14:30:17 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-02 14:30:17 -LiveReload server is running on port 35729
+2019-06-02 14:30:17 -Registering beans for JMX exposure on startup
+2019-06-02 14:30:17 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-02 14:30:17 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-06-02 14:30:17 -Initializing ProtocolHandler ["http-nio-80"]
+2019-06-02 14:30:17 -Starting ProtocolHandler ["http-nio-80"]
+2019-06-02 14:30:17 -Using a shared selector for servlet write/read
+2019-06-02 14:30:17 -Tomcat started on port(s): 80 (http)
+2019-06-02 14:30:17 -Started Application in 1.677 seconds (JVM running for 2127.053)
+2019-06-02 14:30:17 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-06-02 14:31:55 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-02 14:31:55 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-02 14:31:55 -FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2019-06-02 14:32:39 -{dataSource-3} inited
+2019-06-02 14:32:39 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-06-02 14:32:39 -==> Parameters: 
+2019-06-02 14:32:39 -<==      Total: 4

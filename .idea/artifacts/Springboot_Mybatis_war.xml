@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Springboot_Mybatis:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Springboot_Mybatis</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Springboot_Mybatis.war">
+      <element id="artifact" artifact-name="Springboot_Mybatis:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="libs" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

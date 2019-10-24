@@ -1,0 +1,211 @@
+2019-06-25 01:50:19 -create connection error, url: jdbc:mysql://47.99.120.249:3306/mytest?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.readPacket(MysqlIO.java:632)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1016)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2229)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3008)
+	at com.mysql.jdbc.MysqlIO.readPacket(MysqlIO.java:567)
+	... 18 common frames omitted
+2019-06-25 20:22:54 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-06-25 20:22:54 -==> Parameters: 
+2019-06-25 20:22:54 -<==      Total: 4
+2019-06-25 20:31:33 -Starting Application on DESKTOP-PLKM4IJ with PID 20664 (D:\topcheer\topcheer\Springboot_Mybatis\target\classes started by 17612 in D:\topcheer\topcheer\Springboot_Mybatis)
+2019-06-25 20:31:33 -The following profiles are active: dev
+2019-06-25 20:31:35 -HV000001: Hibernate Validator 5.3.5.Final
+2019-06-25 20:31:36 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18b73f0c: startup date [Tue Jun 25 20:31:36 CST 2019]; root of context hierarchy
+2019-06-25 20:31:39 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-25 20:31:39 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-25 20:31:42 -Tomcat initialized with port(s): 80 (http)
+2019-06-25 20:31:42 -Starting service [Tomcat]
+2019-06-25 20:31:42 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-06-25 20:31:42 -Initializing Spring embedded WebApplicationContext
+2019-06-25 20:31:42 -Root WebApplicationContext: initialization completed in 6428 ms
+2019-06-25 20:31:43 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 20:31:43 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 20:31:43 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 20:31:43 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 20:31:43 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-06-25 20:31:43 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-06-25 20:31:43 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-06-25 20:31:43 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-25 20:31:43 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-06-25 20:31:44 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18b73f0c: startup date [Tue Jun 25 20:31:36 CST 2019]; root of context hierarchy
+2019-06-25 20:31:44 -Mapped "{[/getResourceByPage]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByPage(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.text.ParseException
+2019-06-25 20:31:44 -Mapped "{[/getResourceByResourceName]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByResourceName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getResourceByParamater]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByParamater(javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getAllResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceController.getAllResource(javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getAllResourceType]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceTypeController.getAllResourceType(javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getRoleByRoleName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleByRoleName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleById(com.zqq.model.Role)
+2019-06-25 20:31:44 -Mapped "{[/deleteRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.deleteRoleById(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getRolesByPages]}" onto public java.lang.Object com.zqq.ctrl.RoleController.getRolesByPages(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String) throws java.text.ParseException
+2019-06-25 20:31:44 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/addRole]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.addRole(com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.getRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/deleteRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.deleteRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/addRoleResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.addRoleResource(int,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-25 20:31:44 -Mapped "{[/updateUserInfoById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserInfoById(int,java.lang.String,int,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-25 20:31:44 -Mapped "{[/getUserByUserName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserByUserName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserController.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-06-25 20:31:44 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/deleteUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.deleteUserById(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-06-25 20:31:44 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserController.getAllUsers(org.springframework.ui.Model)
+2019-06-25 20:31:44 -Mapped "{[/addUser]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.addUser(com.zqq.model.User,com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/sendMail]}" onto public java.lang.String com.zqq.ctrl.util.SendEmailCongroller.sendEmail()
+2019-06-25 20:31:44 -Mapped "{[/sendValidateCode]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.util.SendPhoneValidateCode.sendValidateCode(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 20:31:44 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 20:31:44 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 20:31:44 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 20:31:44 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 20:31:46 -LiveReload server is running on port 35729
+2019-06-25 20:31:46 -Registering beans for JMX exposure on startup
+2019-06-25 20:31:46 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-25 20:31:46 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-06-25 20:31:46 -Initializing ProtocolHandler ["http-nio-80"]
+2019-06-25 20:31:46 -Starting ProtocolHandler ["http-nio-80"]
+2019-06-25 20:31:46 -Using a shared selector for servlet write/read
+2019-06-25 20:31:46 -Tomcat started on port(s): 80 (http)
+2019-06-25 20:31:46 -Started Application in 13.841 seconds (JVM running for 16.108)
+2019-06-25 20:31:46 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-06-25 20:32:05 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 20:32:05 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 20:32:05 -FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2019-06-25 20:32:05 -{dataSource-1} inited
+2019-06-25 20:32:05 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-06-25 20:32:05 -==> Parameters: 
+2019-06-25 20:32:05 -<==      Total: 4
+2019-06-25 20:36:13 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:36:13 -==> Parameters: admin(String), admin(String)
+2019-06-25 20:36:13 -<==      Total: 1
+2019-06-25 20:42:03 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:42:03 -==> Parameters: admin(String), admin(String)
+2019-06-25 20:42:03 -<==      Total: 1
+2019-06-25 20:42:22 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:42:22 -==> Parameters: undefined(String), undefined(String)
+2019-06-25 20:42:22 -<==      Total: 0
+2019-06-25 20:42:26 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:42:26 -==> Parameters: undefined(String), undefined(String)
+2019-06-25 20:42:26 -<==      Total: 0
+2019-06-25 20:42:28 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:42:28 -==> Parameters: undefined(String), undefined(String)
+2019-06-25 20:42:28 -<==      Total: 0
+2019-06-25 20:55:24 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:55:24 -==> Parameters: undefined(String), undefined(String)
+2019-06-25 20:55:24 -<==      Total: 0
+2019-06-25 20:55:24 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:55:24 -==> Parameters: undefined(String), undefined(String)
+2019-06-25 20:55:24 -<==      Total: 0
+2019-06-25 20:55:24 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 20:55:24 -==> Parameters: undefined(String), undefined(String)
+2019-06-25 20:55:24 -<==      Total: 0
+2019-06-25 21:01:53 -==>  Preparing: select a.user_id, a.user_name, a.password, a.phone,a.create_time,a.update_time,a.price , b.role_id,b.role_name,b.create_time,b.update_time,b.remark from t_user a inner join role b on a.role_id=b.role_id where a.user_name=? and a.password=? 
+2019-06-25 21:01:53 -==> Parameters: admin(String), admin(String)
+2019-06-25 21:01:53 -<==      Total: 1
+2019-06-25 21:11:28 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18b73f0c: startup date [Tue Jun 25 20:31:36 CST 2019]; root of context hierarchy
+2019-06-25 21:11:28 -Unregistering JMX-exposed beans on shutdown
+2019-06-25 21:11:28 -Unregistering JMX-exposed beans
+2019-06-25 21:11:28 -{dataSource-1} closed
+2019-06-25 21:11:29 -Starting Application on DESKTOP-PLKM4IJ with PID 20664 (D:\topcheer\topcheer\Springboot_Mybatis\target\classes started by 17612 in D:\topcheer\topcheer\Springboot_Mybatis)
+2019-06-25 21:11:29 -The following profiles are active: dev
+2019-06-25 21:11:29 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ec32aa1: startup date [Tue Jun 25 21:11:29 CST 2019]; root of context hierarchy
+2019-06-25 21:11:29 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-25 21:11:29 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-25 21:11:29 -Tomcat initialized with port(s): 80 (http)
+2019-06-25 21:11:29 -Starting service [Tomcat]
+2019-06-25 21:11:29 -Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-06-25 21:11:29 -Initializing Spring embedded WebApplicationContext
+2019-06-25 21:11:29 -Root WebApplicationContext: initialization completed in 689 ms
+2019-06-25 21:11:30 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 21:11:30 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 21:11:30 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 21:11:30 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 21:11:30 -Mapping filter: 'MyFilter' to urls: [/*]
+2019-06-25 21:11:30 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-06-25 21:11:30 -Mapping filter: 'remoteIpFilter' to: [/*]
+2019-06-25 21:11:30 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-25 21:11:30 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-06-25 21:11:30 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ec32aa1: startup date [Tue Jun 25 21:11:29 CST 2019]; root of context hierarchy
+2019-06-25 21:11:30 -Mapped "{[/getResourceByPage]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByPage(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.text.ParseException
+2019-06-25 21:11:30 -Mapped "{[/getResourceByResourceName]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByResourceName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getResourceByParamater]}" onto public java.lang.Object com.zqq.ctrl.ResourceController.getResourceByParamater(javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getAllResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceController.getAllResource(javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getAllResourceType]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.ResourceTypeController.getAllResourceType(javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getRoleByRoleName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleByRoleName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getRoleById(com.zqq.model.Role)
+2019-06-25 21:11:30 -Mapped "{[/deleteRoleById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.deleteRoleById(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getRolesByPages]}" onto public java.lang.Object com.zqq.ctrl.RoleController.getRolesByPages(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String) throws java.text.ParseException
+2019-06-25 21:11:30 -Mapped "{[/getAllRoles]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.getAllRoles(javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/addRole]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleController.addRole(com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.getRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/deleteRoleResourceByRoleId]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.deleteRoleResourceByRoleId(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/addRoleResource]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.RoleResourceController.addRoleResource(int,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/logOut]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.logOut(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/updateUserPwdById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserPwdById(com.zqq.model.User,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-25 21:11:30 -Mapped "{[/updateUserInfoById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.updateUserInfoById(int,java.lang.String,int,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-06-25 21:11:30 -Mapped "{[/getUserByUserName]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserByUserName(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/getAllUserByPage]}" onto public java.lang.Object com.zqq.ctrl.UserController.getAllUserByPage(javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception,java.text.ParseException
+2019-06-25 21:11:30 -Mapped "{[/getUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.getUserById(com.zqq.model.User,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/deleteUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.deleteUserById(int,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.login(com.zqq.model.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-06-25 21:11:30 -Mapped "{[/getAllUser]}" onto public java.lang.String com.zqq.ctrl.UserController.getAllUsers(org.springframework.ui.Model)
+2019-06-25 21:11:30 -Mapped "{[/addUser]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.UserController.addUser(com.zqq.model.User,com.zqq.model.Role,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/sendMail]}" onto public java.lang.String com.zqq.ctrl.util.SendEmailCongroller.sendEmail()
+2019-06-25 21:11:30 -Mapped "{[/sendValidateCode]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.zqq.ctrl.util.SendPhoneValidateCode.sendValidateCode(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 21:11:30 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 21:11:30 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 21:11:30 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 21:11:30 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 21:11:30 -LiveReload server is running on port 35729
+2019-06-25 21:11:30 -Registering beans for JMX exposure on startup
+2019-06-25 21:11:30 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-25 21:11:30 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-06-25 21:11:30 -Initializing ProtocolHandler ["http-nio-80"]
+2019-06-25 21:11:30 -Starting ProtocolHandler ["http-nio-80"]
+2019-06-25 21:11:30 -Using a shared selector for servlet write/read
+2019-06-25 21:11:30 -Tomcat started on port(s): 80 (http)
+2019-06-25 21:11:30 -Started Application in 1.36 seconds (JVM running for 2399.778)
+2019-06-25 21:11:30 ->>>>>>>>>>>>>>>>>>>启动成功<<<<<<<<<<<<<<<<<<<<
+2019-06-25 21:20:48 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 21:20:48 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 21:20:48 -FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2019-06-25 21:20:48 -{dataSource-2} inited
+2019-06-25 21:20:48 -==>  Preparing: select role_id,role_name,create_time,update_time from role 
+2019-06-25 21:20:48 -==> Parameters: 
+2019-06-25 21:20:48 -<==      Total: 4
