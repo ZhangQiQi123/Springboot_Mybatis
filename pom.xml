@@ -5,27 +5,27 @@
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>Springboot_Mybatis</name>
-  
+
 	<!-- Spring boot的项目必须要将parent设置为spring boot的parent，该parent包含了大量默认的配置，大大简化了我们的开发。 -->
-	<parent> 
-		<groupId>org.springframework.boot</groupId> 
-		<artifactId>spring-boot-starter-parent</artifactId> 
-		<version>1.5.6.RELEASE</version> 
-		<relativePath/> <!-- lookup parent from repository --> 
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	
-	<properties> 
-	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-	  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
-	  <java.version>1.8</java.version> 
+
+	<properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	  <java.version>1.8</java.version>
 	  <poi.version>3.13</poi.version>
-  	</properties>  
-  	
-  	<dependencies> 
+  	</properties>
+
+  	<dependencies>
 		<!-- spring web -->
-		<dependency> 
-			<groupId>org.springframework.boot</groupId> 
-			<artifactId>spring-boot-starter-web</artifactId> 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<!-- 运行在外置的tomcat -->
 		<dependency>
@@ -59,19 +59,19 @@
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>      
+		</dependency>
 		<!-- mysql驱动 -->
-		<dependency> 
-			<groupId>mysql</groupId> 
-			<artifactId>mysql-connector-java</artifactId> 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 			<!-- <version>5.1.25</version>  -->
-		</dependency> 
-		 <!-- alibaba的druid数据库连接池 --> 
+		</dependency>
+		 <!-- alibaba的druid数据库连接池 -->
 		<!-- <dependency> 
 			<groupId>com.alibaba</groupId> 
 			<artifactId>druid-spring-boot-starter</artifactId> 
 			<version>1.1.0</version> 
-		</dependency> --> 
+		</dependency> -->
 		<dependency>
 		    <groupId>com.alibaba</groupId>
 		    <artifactId>druid</artifactId>
@@ -84,17 +84,17 @@
 		    <version>1.0.2</version>
 		</dependency>
 		<!-- spring-boot整合mybatis -->
-		<dependency> 
-			<groupId>org.mybatis.spring.boot</groupId> 
-			<artifactId>mybatis-spring-boot-starter</artifactId> 
-			<version>1.3.2</version> 
-		</dependency> 
-		 <!-- alibaba的druid数据库连接池 --> 
-		<dependency> 
-			<groupId>com.alibaba</groupId> 
-			<artifactId>druid-spring-boot-starter</artifactId> 
-			<version>1.1.0</version> 
-		</dependency> 	    
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		 <!-- alibaba的druid数据库连接池 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.0</version>
+		</dependency>
 		<!-- 通用 mapper -->
 		<dependency>
 			<groupId>tk.mybatis</groupId>
@@ -114,22 +114,22 @@
 		    <version>2.0.0</version>
 		</dependency>
 		<!-- json格式化 -->
-		<dependency> 
-			<groupId>com.fasterxml.jackson.core</groupId> 
-			<artifactId>jackson-core</artifactId> 
-		</dependency> 
-		<dependency> 
-			<groupId>com.fasterxml.jackson.core</groupId> 
-			<artifactId>jackson-databind</artifactId> 
-		</dependency> 
-		<dependency> 
-			<groupId>com.fasterxml.jackson.datatype</groupId> 
-			<artifactId>jackson-datatype-joda</artifactId> 
-		</dependency> 
-		<dependency> 
-			<groupId>com.fasterxml.jackson.module</groupId> 
-			<artifactId>jackson-module-parameter-names</artifactId> 
-		</dependency> 
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-joda</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-parameter-names</artifactId>
+		</dependency>
 		 <!-- poi -->
 		<dependency>
 		    <groupId>org.apache.poi</groupId>
@@ -214,41 +214,65 @@
             <version>1.3.5.RELEASE</version>
         </dependency>
         <!-- 发送邮件 -->
-        <dependency>  
+        <dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-mail</artifactId>
-		</dependency>  
-		<!-- 整合redis --> 
-		<dependency> 
-			<groupId>org.springframework.boot</groupId> 
-			<artifactId>spring-boot-starter-data-redis</artifactId> 
 		</dependency>
-
+		<!-- 整合redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<!--apollo配置中心依赖-->
+		<dependency>
+			<groupId>com.ctrip.framework.apollo</groupId>
+			<artifactId>apollo-client</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ctrip.framework.apollo</groupId>
+			<artifactId>apollo-core</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<!--使用刷新配置注解-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-context</artifactId>
+			<version>1.3.3.RELEASE</version>
+		</dependency>
+		<!--lombok日志打印-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.20</version>
+			<optional>true</optional>
+			<!--            <scope>provided</scope>-->
+		</dependency>
    </dependencies>
 
 	<build>
 	<!-- 打成jar包的名称 -->
 	<finalName>Springboot_Mybatis</finalName>
-		<plugins> 
-			<plugin> 
-				<groupId>org.springframework.boot</groupId> 
-				<artifactId>spring-boot-maven-plugin</artifactId> 
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 	                <fork>true</fork>
 	            </configuration>
-			</plugin> 
-			<!-- mybatis generator 自动生成代码插件 --> 
-			<plugin> 
-				<groupId>org.mybatis.generator</groupId> 
+			</plugin>
+			<!-- mybatis generator 自动生成代码插件 -->
+			<plugin>
+				<groupId>org.mybatis.generator</groupId>
 				<artifactId>mybatis-generator-maven-plugin</artifactId>
-				<version>1.3.2</version> 
-				<configuration> 
-					<configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile> 
-					<overwrite>true</overwrite> 
-					<verbose>true</verbose> 
-				</configuration> 
-			</plugin> 
-			
+				<version>1.3.2</version>
+				<configuration>
+					<configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
+					<overwrite>true</overwrite>
+					<verbose>true</verbose>
+				</configuration>
+			</plugin>
+
 
 		</plugins>
 	</build>

@@ -7,12 +7,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,8 +26,8 @@ import com.zqq.service.UserService;
 import com.zqq.util.PageInfo;
 
 @Controller
+@Slf4j
 public class UserController {
-	public static final Logger log=Logger.getLogger(UserController.class);
 	@Autowired
 	private UserService userService;
 
