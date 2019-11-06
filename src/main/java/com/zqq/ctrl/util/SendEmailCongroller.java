@@ -34,8 +34,8 @@ public class SendEmailCongroller {
 	@ResponseBody
 	@RequestMapping("/sendMail")
 	public String sendEmail(){
-		mailService.sendMail("自定义标题1", "ZhangQiQi", "17612197279@163.com");
-		mailService.sendMail("自定义标题2", "LiLing", "1270442681@qq.com");
+//		mailService.sendMail("自定义标题1", "ZhangQiQi", "17612197279@163.com");
+//		mailService.sendMail("自定义标题2", "LiLing", "1270442681@qq.com");
 		return "success";
 	}
 }

@@ -20,16 +20,16 @@ import javax.annotation.Resource;
 @EnableApolloConfig("namespace1")
 public class ApolloController {
     //---------------------------------1.配置中心直接注入到属性
-    @Value("${dev.namespace.email}")
-    private String key;
+//    @Value("${dev.namespace.email}")
+//    private String key;
 
 
 
-    @Resource
-    private DevConfig devConfig;
-
-    @RequestMapping("/apollo")
-    public String apollo(){
-        return "Value:"+devConfig.getNamespaceemail()+", Bean:"+devConfig.getMobile()+", name:"+devConfig.getName();
-    }
+//    @Resource
+//    private DevConfig devConfig;
+//
+//    @RequestMapping("/apollo")
+//    public String apollo(){
+//        return "Value:"+devConfig.getNamespaceemail()+", Bean:"+devConfig.getMobile()+", name:"+devConfig.getName();
+//    }
 }
