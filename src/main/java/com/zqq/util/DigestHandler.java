@@ -3,7 +3,7 @@ package com.zqq.util;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 
-import com.appresso.ds.common.fw.id.Main;
+
 import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
 import com.sun.org.apache.xml.internal.security.utils.Base64;
 

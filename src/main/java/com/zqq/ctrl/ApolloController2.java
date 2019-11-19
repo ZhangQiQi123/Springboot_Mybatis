@@ -24,8 +24,8 @@ public class ApolloController2 {
     @Value("${spring.datasource.url}")
     private String dbUrl;
 
-//    @Value("${server.servlet-path}")
-//    private String serviceName;
+   /* @Value("${server.servlet-path}")
+    private String serviceName;*/
 
     @GetMapping("/getServerPort")
     public String getServerPort(){
@@ -39,9 +39,9 @@ public class ApolloController2 {
     public String getDbUrl(){
         return dbUrl;
     }
-//    @GetMapping("/getServiceName")
-//    public String getServiceName(){
-//        return serviceName;
-//    }
+   /* @GetMapping("/getServiceName")
+    public String getServiceName(){
+        return serviceName;
+    }*/
 
 }

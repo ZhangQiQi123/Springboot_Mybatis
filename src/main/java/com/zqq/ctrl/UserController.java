@@ -35,7 +35,14 @@ public class UserController {
 	public void setUserService(UserService userService) {
 		this.userService = userService;
 	}
-	
+
+
+	@RequestMapping("/index")
+	public String index(Model model){
+
+		log.info("访问首页");
+		return "index";
+	}
 	
 	@RequestMapping("/getAllUser")
 	public String getAllUsers(Model model){
