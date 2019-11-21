@@ -16,7 +16,7 @@ import javax.xml.namespace.QName;
 @MapperScan("com.zqq.mapper")
 @ServletComponentScan
 //apollo启动
-@EnableApolloConfig
+//@EnableApolloConfig
 //Quartz启动
 //@EnableScheduling
 @Slf4j
