@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqq.mapper.ErrorInfoMapper">
+    <resultMap id="errorMap" type="errorInfo">
+        <id property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="serialNo" column="serial_no" jdbcType="VARCHAR"/>
+        <result property="proInstId" column="pro_inst_id" jdbcType="VARCHAR"/>
+        <result property="proDefId" column="pro_def_id" jdbcType="VARCHAR"/>
+        <result property="actId" column="act_id" jdbcType="VARCHAR"/>
+        <result property="errorCode" column="error_code" jdbcType="VARCHAR"/>
+        <result property="errorMsg" column="error_msg" jdbcType="VARCHAR"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <insert id="insert" parameterType="errorInfo">
+        insert into serial_no (
+        <if test="serialNo != null">serial_no,</if>
+        <if test="proInstId != null">pro_inst_id,</if>
+        <if test="proDefId != null"> pro_def_id,</if>
+        <if test="actId != null">act_id,</if>
+        <if test="errorCode != null">error_code,</if>
+        <if test="errorMsg != null">error_msg,</if>
+        <if test="updateTime != null">update_time</if>
+       )
+        values (
+        <if test="serialNo != null">#{serialNo},</if>
+        <if test="proInstId != null">#{proInstId},</if>
+        <if test="proDefId != null">#{proDefId},</if>
+        <if test="actId != null">#{actId},</if>
+        <if test="errorCode != null">#{errorCode},</if>
+        <if test="errorMsg != null">#{errorMsg},</if>
+        <if test="updateTime != null">#{updateTime}</if>
+        )
+    </insert>
+</mapper>

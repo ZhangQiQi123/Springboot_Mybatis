@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqq.mapper.GrayrouteInfoMapper">
+    <resultMap id="grayrouteInfoMap" type="grayrouteInfo">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="serialNo" column="serial_no" jdbcType="VARCHAR"/>
+        <result property="proDefId" column="pro_def_id" jdbcType="VARCHAR"/>
+        <result property="proDefVersion" column="pro_def_version" jdbcType="VARCHAR"/>
+        <result property="variable" column="variable" jdbcType="VARCHAR"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <insert id="insert" parameterType="grayrouteInfo">
+        insert into sys_grayroute_info (
+        serial_no,pro_def_id,pro_def_version,variable,update_time
+        )
+        values (serialNo,proDefId,proDefVersion,variable,updateTime)
+    </insert>
+</mapper>

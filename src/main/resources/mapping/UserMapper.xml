@@ -131,7 +131,7 @@
   	delete from t_user where user_id=#{0}
   </delete>
   <select id="getUserByUserName" resultMap="userMap" parameterType="String">
-  	select <include refid="Base_Column_List" /> from t_user a where user_name=#{0}
+  	select <include refid="Base_Column_List" /> from t_user a where user_name=#{arg0}
   </select>
   <update id="updateUserPwd" parameterType="user">
   	update t_user set password=#{password,jdbcType=VARCHAR} , update_time = #{updateTime,jdbcType=TIMESTAMP} where user_id=#{userId,jdbcType=INTEGER}
